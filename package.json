@@ -1,0 +1,29 @@
+{
+  "name": "kioscolsanitas",
+  "version": "1.0.0",
+  "description": "Aplicación para copagos",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "IT DATA - Luis Felipe Flórez L.",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "easy-soap-request": "^2.3.6",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.1",
+    "soap": "^0.25.0",
+    "validator": "^10.10.0",
+    "ws": "^6.1.2",
+    "xmlreader": "^0.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

@@ -1,0 +1,80 @@
+24-oct-2017 14:34:26.065 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,5500,5,10,c111,8KS00007,0,0,PRUEBA2,0,63 
+24-oct-2017 14:34:46.259 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:34:46.332 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+24-oct-2017 14:34:46.348 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:34:46.369 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000005500,000000000005,000000000010,c111      ,,,,,,,,,,8KS00007  ,,,,,,,, 
+24-oct-2017 14:37:32.741 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,5500,5,10,c111,8KS00007,0,0,PRUEBA2,0,63 
+24-oct-2017 14:37:52.778 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:37:52.780 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+24-oct-2017 14:37:52.780 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:37:52.782 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000005500,000000000005,000000000010,c111      ,,,,,,,,,,8KS00007  ,,,,,,,, 
+24-oct-2017 14:37:59.049 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,5500,5,10,c111,8KS00007,0,0,PRUEBA2,0,63 
+24-oct-2017 14:38:19.058 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:38:19.068 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+24-oct-2017 14:38:19.068 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:38:19.071 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000005500,000000000005,000000000010,c111      ,,,,,,,,,,8KS00007  ,,,,,,,, 
+24-oct-2017 14:38:41.880 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,5500,5,10,c111,8KS00007,0,0,PRUEBA2,0,63 
+24-oct-2017 14:39:01.915 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:39:01.916 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+24-oct-2017 14:39:01.917 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:39:01.919 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000005500,000000000005,000000000010,c111      ,,,,,,,,,,8KS00007  ,,,,,,,, 
+24-oct-2017 14:42:27.158 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,5500,5,10,c111,8KS00007,0,0,PRUEBA2,0,63 
+24-oct-2017 14:42:47.201 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:42:47.215 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+24-oct-2017 14:42:47.216 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.credibanco.tef.test.InvocacionDirectaTest.main(InvocacionDirectaTest.java:55)
+24-oct-2017 14:42:47.218 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000005500,000000000005,000000000010,c111      ,,,,,,,,,,8KS00007  ,,,,,,,, 

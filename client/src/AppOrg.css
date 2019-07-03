@@ -1,0 +1,243 @@
+html,
+body {
+  min-height: 100%;
+}
+
+.principal {
+  height: 100%;
+  background-image: url("./img/colsanitas_soft-pag_1.jpg");
+  background-repeat: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.texto_inicio {
+  position: absolute;
+  left: 25%;
+  bottom: 0%;
+  font-size: 1em;
+  font-family: "FNB Sans Regular";
+  font-size: 50px;
+  color: white;
+}
+
+/*Estilos en Ingrese Identificacion*/
+.fondoIdentificacion {
+  height: 100%;
+  background-image: url("./img/colsanitas_soft-pag_2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.otro {
+  height: 100vh;
+  background-image: url("./img/colsanitas_soft-pag_2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 155vh;
+  background-attachment: fixed;
+}
+
+#fondo_principal {
+  width: 100%;
+  position: relative;
+}
+
+.tipoDocumento {
+  color: white;
+}
+
+.error-message {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.radiobuttonsrow {
+  height: 120px;
+}
+
+.radioDocumento {
+  font-weight: bold;
+  width: 210px;
+  font-family: "FNB Sans Regular";
+}
+
+.inputIdentificacion {
+  background-image: url("./img/input_mark.png");
+  background-size: 100% 100%;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  width: 60%;
+}
+
+.identificacion {
+  margin: auto;
+  display: block;
+  width: 90%;
+}
+
+.linea {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.numero {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  font-family: "FNB Sans Regular";
+}
+
+.keyboard {
+  width: 65%;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  /*top: 590px;
+  left: 120px;
+  width: 365px;
+  height: 50px;
+  border: 0px;
+  border-color: white;
+  font-family: "FNB Sans Regular";
+  font-size: 60px;
+  color: black;*/
+}
+
+.keyboard_2 {
+  margin-top: 20px;
+  /*position: absolute;
+  top: 850px;
+  left: 400px;
+  width: 365px;
+  height: 50px;
+  border: 0px;
+  border-color: white;
+  font-family: "FNB Sans Regular";
+  font-size: 60px;
+  color: black;*/
+}
+
+.izquierda {
+  margin-left: 50%;
+}
+
+.checkbox_1 {
+  position: relative;
+  top: 20%;
+  left: 12%;
+  font-family: "FNB Sans Regular";
+  font-size: 18px;
+  color: white;
+  width: 80%;
+}
+
+.tdocumento {
+  position: relative;
+  font-family: "FNB Sans Regular";
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+.tcedula {
+  font-size: 1em;
+  top: 410px;
+  left: 265px;
+  font-family: "FNB Sans Regular";
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+#imark {
+  position: absolute;
+  font-size: 1em;
+  top: 470px;
+  left: 50px;
+  font-family: "FNB Sans Regular";
+  font-size: 20px;
+  color: white;
+}
+
+#usr {
+  position: absolute;
+  top: 487px;
+  left: 60px;
+  width: 365px;
+  height: 50px;
+  border: 0px;
+  border-color: white;
+  font-family: "FNB Sans Regular";
+  font-size: 50px;
+  text-align: right;
+  color: black;
+}
+
+#checkbox {
+  margin-right: 30px;
+  height: 40px;
+  font-weight: bold;
+}
+/*Código para visualización de botón*/
+#invisible {
+  visibility: hidden;
+}
+/* Código por librerias de Bootstrap https://bootsnipp.com */
+.badgebox {
+  opacity: 0;
+}
+
+.badgebox + .badge {
+  /* Move the check mark away when unchecked */
+  text-indent: -999999px;
+  /* Makes the badge's width stay the same checked and unchecked */
+  width: 27px;
+}
+
+.badgebox:focus + .badge {
+  /* Set something to make the badge looks focused */
+  /* This really depends on the application, in my case it was: */
+
+  /* Adding a light border */
+  box-shadow: inset 0px 0px 5px;
+  /* Taking the difference out of the padding */
+}
+
+.badgebox:checked + .badge {
+  /* Move the check mark back when checked */
+  text-indent: 0;
+}
+
+/*Boton numero*/
+.botonNumero {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 3px;
+  font-size: 45px;
+}
+
+.botonInvisible {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 3px;
+}
+
+.aceptar {
+  width: 312px;
+  height: 75px;
+  margin-bottom: 3px;
+  font-size: 40px;
+}
+
+.eliminar {
+  width: 312px;
+  height: 75px;
+  font-size: 40px;
+}

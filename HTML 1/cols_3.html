@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<script type="text/javascript">
+    /* Sumar dos números. */
+function sumar (valor) {
+    var total = 0;	
+    valor = parseInt(valor); // Convertir el valor a un entero (número).
+	
+    total = document.getElementById('v_total').innerHTML;
+	
+    // Aquí valido si hay un valor previo, si no hay datos, le pongo un cero "0".
+    total = (total == null || total == undefined || total == "") ? 0 : total;
+	
+    /* Esta es la suma. */
+    total = (parseInt(total) + parseInt(valor));
+	
+    // Colocar el resultado de la suma en el control "span".
+    document.getElementById('v_total').innerHTML = total;
+}
+
+function solonumeros(e){
+	key=e.keycode || e.which;
+	teclado=String.fromCharCode(key);
+	numeros="0123456789";
+	especiales="8-37-39-46";
+	tecla_especial=false;
+	for(var i in especiales){
+		
+		if(key==especiales[i]){
+			tecla_especial=true;
+		}
+	}
+	if(numeros.indexOf(teclado)==-1 && !tecla_especial){
+		return false;
+	}
+}
+
+function eliminar(){
+	var anterior=document.login.display.value;
+	var nuevovalor=anterior.substring(0, anterior.length-1);
+	document.getElementById("usr").value=nuevovalor;
+}
+
+</script>
+<meta charset="utf-8">
+<title>Colsanitas</title>
+		<style>
+		#fondo_principal {
+			width: 100%;
+      		position: relative;
+		}
+			
+		#invisible {
+				visibility: hidden;
+			}
+								
+		#tdocumento{
+		position: absolute;
+      	font-size: 1em;
+     	top: 250px;
+		left: 260px;
+		font-family: "FNB Sans Regular";
+		font-size: 20px;
+		color: white;
+			}
+		
+		#tcompra{
+		position: absolute;
+      	font-size: 1em;
+     	top: 530px;
+		left:70px;
+		font-family: "FNB Sans Regular";
+		font-size: 20px;
+		color: white;
+			}
+		
+		#imark{
+		position: absolute;
+      	font-size: 1em;
+     	top: 570px;
+		left: 50px;
+		font-family: "FNB Sans Regular";
+		font-size: 20px;
+		color: white;
+			}
+		
+		#usr{
+		position: absolute;
+     	top: 587px;
+		left: 60px;
+		width: 365px;
+		height: 50px;
+		border: 0px;
+		border-color: white;
+		font-family: "FNB Sans Regular";
+		font-size: 50px;
+		text-align: right;
+		color: black;
+			}
+		
+		#keyboard{
+		position: absolute;
+     	top: 690px;
+		left: 120px;
+		width: 365px;
+		height: 50px;
+		border: 0px;
+		border-color: white;
+		font-family: "FNB Sans Regular";
+		font-size: 60px;
+		color: black;
+			}
+			
+		#keyboard_2{
+		position: absolute;
+     	top: 1180px;
+		left: 60px;
+		width: 700px;
+		height: 50px;
+		border: 0px;
+		border-color: white;
+		font-family: "FNB Sans Regular";
+		font-size: 60px;
+		color: black;
+			}
+			
+		#nombre_cliente{
+		position: absolute;
+      	font-size: 1em;
+     	top: 200px;
+		left: 75px;
+		font-family: "FNB Sans Regular";
+		font-size: 30px;
+		color: white;
+			}
+		
+		#info_contrato{
+		position: absolute;
+      	font-size: 1em;
+     	top: 235px;
+		left: 75px;
+		font-family: "FNB Sans Regular";
+		font-size: 18px;
+		color: white;
+			}
+			
+		#hr_1{
+		position: absolute;
+      	top: 260px;
+		left: 75px;
+		color: white;
+			}
+			
+		#hr_2{
+		position: absolute;
+      	top: 380px;
+		left: 75px;
+		color: white;
+			}
+			
+		
+		#vale{
+		position: absolute;
+      	top: 300px;
+		left: 350px;
+		font-family: "FNB Sans Regular";
+		font-size: 24px;
+		color: white;
+			}
+			
+		#v_vale{
+		position: absolute;
+      	top: 297px;
+		left: 575px;
+		font-family: "FNB Sans Regular";
+		font-size: 24px;
+		color: white;
+		background-color: transparent;
+		border-color: transparent;
+		width: 105px;
+		text-align: right;
+			}
+			
+		#cantidad{
+		position: absolute;
+      	top: 350px;
+		left: 350px;
+		font-family: "FNB Sans Regular";
+		font-size: 24px;
+		color: white;
+			}
+			
+		#v_cantidad{
+		position: absolute;
+      	top: 348px;
+		left: 640px;
+		font-family: "FNB Sans Regular";
+		font-size: 24px;
+		color: white;
+		background-color: transparent;
+		border-color: transparent;
+		width: 40px;
+		text-align: right;
+			}
+			
+		#total{
+		position: absolute;
+      	top: 400px;
+		left: 350px;
+		font-family: "FNB Sans Regular";
+		font-size: 24px;
+		color: white;
+			}
+			
+		#v_total{
+		position: absolute;
+      	top: 400px;
+		left: 560px;
+		font-family: "FNB Sans Regular";
+		font-size: 24px;
+		color: white;
+	    background-color: transparent;
+		border-color: transparent;
+		text-align: right;
+		width: 120px;
+			}
+		
+			
+	</style>
+</head>
+
+<body>
+<img id= "fondo_principal" src="images/colsanitas_soft-pag_2.jpg" width="748" height="1366" alt=""/>
+	
+	<p id="nombre_cliente">LUIS FELIPE FLOREZ LEAÑO</p>
+<p id="info_contrato">MEDISANITAS No. Contrato: 1040100</p>
+	
+<hr id="hr_1" color="white" size=2 width="600">
+	
+	<p id="vale">Valor del vale</p>
+	<input type="text" id="v_vale" onkeyup="sumar(this.value)">
+<p id="cantidad">Cantidad</p>
+	<input type="text" id="v_cantidad" onkeyup="sumar(this.value)">
+	
+	<hr id="hr_2" color="white" size=2 width="600">
+	
+<p id="total">TOTAL</p>
+	<span id="v_total"></span>
+	
+<p id="tcompra">Indique el número de vales a comprar</p>
+	<img id="imark" src="images/input_mark.png"/>
+			  <label for="usr"></label>
+			  <input type="text" class="form-control" id="usr" name="display" onkeypress="return solonumeros(event)">
+			
+				<div id="keyboard" class="form-group">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="1" onClick="login.display.value +='1'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="2" onClick="login.display.value +='2'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="3" onClick="login.display.value +='3'">
+					<br>
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="4" onClick="login.display.value +='4'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="5" onClick="login.display.value +='5'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="6" onClick="login.display.value +='6'">
+					<br>
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="7" onClick="login.display.value +='7'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="8" onClick="login.display.value +='8'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="9" onClick="login.display.value +='9'">
+					<br>
+					<button id="invisible" style="width:75px; height:75px; margin-bottom:3px" type="button" class="btn btn-primary"></button>
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="0" onClick="login.display.value +='0'">
+					<button id="invisible" style="width:75px; height:75px; margin-bottom:3px" type="button" class="btn btn-primary"></button>
+				</div>
+<div class="form-group" id="keyboard_2">
+					<input style="width: 312px; height: 75px; font-size: 40px" type="button" class="btn btn-primary" value=" ACEPTAR" onclick="#"/>
+					<input style="width: 312px; height: 75px; font-size: 40px" type="button" class="btn btn-primary" value=" SALIR" onclick="#"/>
+				</div>
+				
+</body>
+</html>

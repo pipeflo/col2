@@ -1,0 +1,33 @@
+02-Jan-2019 14:55:29.553 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,50,1,T0501,78175,0,0,11,59
+ 
+02-Jan-2019 14:55:49.564 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+02-Jan-2019 14:55:49.568 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+02-Jan-2019 14:55:49.569 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+02-Jan-2019 14:55:49.573 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000000050,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+02-Jan-2019 14:56:20.462 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,50,1,T0501,78175,0,0,11,59
+ 
+02-Jan-2019 14:56:31.188 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 43 02 00 62 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 35 33 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 03 47  
+02-Jan-2019 14:56:31.194 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+02-Jan-2019 14:56:31.200 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 9d 02 01 52 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 30 30 30 35 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 31 1c 38 30 00 0c 30 30 30 30 30 30 30 54 30 35 30 31 1c 34 32 00 0a 37 38 31 37 35 20 20 20 20 20 1c 34 35 00 00 1c 35 33 00 0a 30 20 20 20 20 20 20 20 20 20 1c 37 37 00 00 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 31 31 1c 38 33 00 00 1c 38 34 00 00 03 13  
+02-Jan-2019 14:56:32.096 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+02-Jan-2019 14:57:02.101 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendMessage(TEFAuthorizationWorker.java:164)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:254)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+02-Jan-2019 14:57:02.105 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 03,,000000000050,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 

@@ -1,0 +1,77 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Header>
+      <h:HeaderRspns xmlns:h="http://colsanitas.com/ContratoMPServicio/" xmlns="http://colsanitas.com/ContratoMPServicio/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <header>
+            <responseStatus xmlns="http://colsanitas.com/osi/comun/nofuncionales">
+               <ack>false</ack>
+               <businessException>
+                  <errorDetails>
+                     <errorCode>OK</errorCode>
+                     <errorDesc>Ejecución exitosa.</errorDesc>
+                  </errorDetails>
+               </businessException>
+            </responseStatus>
+         </header>
+      </h:HeaderRspns>
+      <ActivityId CorrelationId="1f1007e3-a05f-4cf6-a4b1-7da053c0d5e6" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">afa59622-d68c-4253-8b7f-6471c76182ba</ActivityId>
+   </s:Header>
+   <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <ConsultarBeneficiarioSal xmlns="http://colsanitas.com/ContratoMPServicio/">
+         <consultarBeneficiarioSal>
+            <Contrato xmlns="http://colsanitas.com/osi/srv">
+               <InformacionBasicadelContrato>
+                  <producto xmlns="http://colsanitas.com/osi/comun/contrato">20</producto>
+                  <nombreProducto xmlns="http://colsanitas.com/osi/comun/contrato">MEDISANITAS</nombreProducto>
+                  <codigoPlan xmlns="http://colsanitas.com/osi/comun/contrato">60</codigoPlan>
+                  <nombrePlan xmlns="http://colsanitas.com/osi/comun/contrato">INTEGRAL MEDISANITAS</nombrePlan>
+                  <numContrato xmlns="http://colsanitas.com/osi/comun/contrato">2060232508</numContrato>
+                  <codTipoContrato xmlns="http://colsanitas.com/osi/comun/contrato">3</codTipoContrato>
+                  <tipoContrato xmlns="http://colsanitas.com/osi/comun/contrato">COLECTIVO</tipoContrato>
+                  <codEstadoContrato xmlns="http://colsanitas.com/osi/comun/contrato">4</codEstadoContrato>
+                  <estadoContrato xmlns="http://colsanitas.com/osi/comun/contrato">LIQUIDADO</estadoContrato>
+                  <identificacionContratante xmlns="http://colsanitas.com/osi/comun/contrato">
+                     <numIdentificacion xmlns="http://colsanitas.com/osi/comun/persona">890100577</numIdentificacion>
+                     <tipoIdentificacion xmlns="http://colsanitas.com/osi/comun/persona">NI</tipoIdentificacion>
+                  </identificacionContratante>
+                  <nombreContratante xmlns="http://colsanitas.com/osi/comun/contrato">AVIANCA SA</nombreContratante>
+                  <identificacionTitularFamilia xmlns="http://colsanitas.com/osi/comun/contrato">
+                     <numIdentificacion xmlns="http://colsanitas.com/osi/comun/persona">1018418668</numIdentificacion>
+                     <tipoIdentificacion xmlns="http://colsanitas.com/osi/comun/persona">CC</tipoIdentificacion>
+                  </identificacionTitularFamilia>
+                  <nombreTitularFamilia xmlns="http://colsanitas.com/osi/comun/contrato">CAROL YISSEL MODERA ROMERO</nombreTitularFamilia>
+                  <numeroFamilia xmlns="http://colsanitas.com/osi/comun/contrato">219</numeroFamilia>
+                  <estadoTitularFamilia xmlns="http://colsanitas.com/osi/comun/contrato">LIQUIDADO</estadoTitularFamilia>
+               </InformacionBasicadelContrato>
+               <InformacionBeneficiarios>
+                  <identificacionBeneficiario xmlns="http://colsanitas.com/osi/comun/contrato">
+                     <numIdentificacion xmlns="http://colsanitas.com/osi/comun/persona">1018418668</numIdentificacion>
+                     <tipoIdentificacion xmlns="http://colsanitas.com/osi/comun/persona">CC</tipoIdentificacion>
+                  </identificacionBeneficiario>
+                  <nombreBeneficiario xmlns="http://colsanitas.com/osi/comun/contrato">MODERA_ROMERO,CAROL_YISSEL</nombreBeneficiario>
+                  <numUsuario xmlns="http://colsanitas.com/osi/comun/contrato">1</numUsuario>
+                  <codigoTipoUsuario xmlns="http://colsanitas.com/osi/comun/contrato">21</codigoTipoUsuario>
+                  <tipoUsuario xmlns="http://colsanitas.com/osi/comun/contrato">TITULAR</tipoUsuario>
+                  <parentesco xmlns="http://colsanitas.com/osi/comun/contrato">T</parentesco>
+                  <fechaInicioVigencia xmlns="http://colsanitas.com/osi/comun/contrato">2016-08-01T00:00:00</fechaInicioVigencia>
+                  <fechaFinVigencia xmlns="http://colsanitas.com/osi/comun/contrato">2019-04-30T00:00:00</fechaFinVigencia>
+                  <codigoEstadoBeneficiario xmlns="http://colsanitas.com/osi/comun/contrato">3</codigoEstadoBeneficiario>
+                  <estadoBeneficiarioContrato xmlns="http://colsanitas.com/osi/comun/contrato">ACTIVO</estadoBeneficiarioContrato>
+                  <indicadorUsuarioCompartido xmlns="http://colsanitas.com/osi/comun/contrato">True</indicadorUsuarioCompartido>
+                  <indicadorContinuidad xmlns="http://colsanitas.com/osi/comun/contrato">False</indicadorContinuidad>
+                  <fechaAntiguedadRealOSI xmlns="http://colsanitas.com/osi/comun/contrato">2016-08-01T00:00:00</fechaAntiguedadRealOSI>
+                  <fechaAntiguedadBeneficiario xmlns="http://colsanitas.com/osi/comun/contrato">2016-08-01T00:00:00</fechaAntiguedadBeneficiario>
+                  <valoracionMedica xmlns="http://colsanitas.com/osi/comun/contrato">APROBADO</valoracionMedica>
+                  <indicadorDerechoMaternidad xmlns="http://colsanitas.com/osi/comun/contrato">True</indicadorDerechoMaternidad>
+                  <excepcionTarifaMayor xmlns="http://colsanitas.com/osi/comun/contrato">False</excepcionTarifaMayor>
+                  <grupoBasicoFamiliar xmlns="http://colsanitas.com/osi/comun/contrato">False</grupoBasicoFamiliar>
+               </InformacionBeneficiarios>
+               <EstadoUsuarioPrestacionServicio>
+                  <desCausal xmlns="http://colsanitas.com/osi/comun/contrato">USUARIO VIGENTE</desCausal>
+                  <fechaConsultaPrestacionServicio xmlns="http://colsanitas.com/osi/comun/contrato">2019-01-02T15:10:13</fechaConsultaPrestacionServicio>
+                  <estadoHabilitado xmlns="http://colsanitas.com/osi/comun/contrato">HABILITADO</estadoHabilitado>
+               </EstadoUsuarioPrestacionServicio>
+            </Contrato>
+         </consultarBeneficiarioSal>
+      </ConsultarBeneficiarioSal>
+   </s:Body>
+</s:Envelope>

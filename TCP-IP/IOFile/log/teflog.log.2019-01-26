@@ -1,0 +1,1080 @@
+26-Jan-2019 11:47:08.826 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 11:47:28.862 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 11:47:28.865 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 11:47:28.866 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 11:47:28.869 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 12:33:35.926 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 12:33:55.938 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:33:55.943 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 12:33:55.944 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:33:55.950 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 12:37:15.659 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 12:37:35.707 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:37:35.710 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 12:37:35.710 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:37:35.713 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 12:39:31.808 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 12:39:51.817 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:39:51.821 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 12:39:51.821 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:39:51.826 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 12:41:30.904 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 12:41:50.909 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:41:50.912 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 12:41:50.913 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:41:50.914 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 12:50:22.851 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 12:50:42.855 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:50:42.862 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 12:50:42.864 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 12:50:42.871 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 13:51:13.036 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 13:51:33.049 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 13:51:33.055 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 13:51:33.057 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 13:51:33.062 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 15:03:14.832 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 15:03:34.851 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:03:34.854 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 15:03:34.856 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:03:34.861 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 15:04:18.296 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 15:04:38.301 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:04:38.303 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 15:04:38.304 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:04:38.308 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 15:05:16.896 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 15:05:36.905 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:05:36.907 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 15:05:36.908 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:05:36.911 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 15:05:45.984 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 15:06:05.990 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:06:05.992 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 15:06:05.993 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 15:06:05.996 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 18:45:31.182 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 18:45:51.192 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 18:45:51.196 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 18:45:51.196 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 18:45:51.203 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 18:59:26.364 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 18:59:46.373 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 18:59:46.378 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 18:59:46.379 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 18:59:46.381 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:06:56.761 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:07:16.773 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:07:16.776 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:07:16.776 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:07:16.783 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:07:50.370 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 19:08:10.379 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:08:10.382 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:08:10.382 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:08:10.385 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:09:29.727 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 19:09:49.730 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:09:49.734 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:09:49.735 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:09:49.740 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:12:48.106 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 19:13:08.117 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:13:08.122 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:13:08.123 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:13:08.127 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:15:40.717 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:16:00.745 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:16:00.750 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:16:00.751 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:16:00.757 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:18:23.462 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:18:43.473 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:18:43.482 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:18:43.483 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:18:43.493 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:22:17.377 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:22:37.386 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:22:37.392 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:22:37.394 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:22:37.402 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:22:54.997 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:23:15.004 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:23:15.012 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:23:15.012 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:23:15.018 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:24:43.897 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:25:03.903 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:25:03.907 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:25:03.908 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:25:03.910 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:26:38.260 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:26:58.270 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:26:58.273 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:26:58.274 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:26:58.277 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:27:07.306 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 19:27:27.313 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:27:27.317 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:27:27.318 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:27:27.320 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 19:38:18.402 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,93600,1,T0501,78175,0,0,11,60 
+26-Jan-2019 19:38:38.411 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:38:38.417 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 19:38:38.418 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 19:38:38.421 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000093600,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 20:10:22.083 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,220000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 20:10:42.099 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:10:42.104 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 20:10:42.105 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:10:42.107 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000220000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 20:10:48.714 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 20:11:08.721 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:11:08.727 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 20:11:08.727 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:11:08.739 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 20:11:47.652 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,440000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 20:12:07.669 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:12:07.672 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 20:12:07.673 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:12:07.677 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000440000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 20:12:23.423 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,22000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 20:12:43.430 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:12:43.435 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 20:12:43.435 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:12:43.439 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000022000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 20:15:15.025 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 20:15:35.032 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:15:35.035 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 20:15:35.036 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 20:15:35.040 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:41:52.749 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,176000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 21:42:12.764 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:42:12.771 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:42:12.773 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:42:12.777 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000176000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:45:22.371 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,176000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 21:45:42.379 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:45:42.384 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:45:42.385 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:45:42.389 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000176000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:45:49.815 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:46:09.819 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:46:09.826 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:46:09.827 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:46:09.837 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:46:59.963 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,88000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:47:19.973 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:47:19.978 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:47:19.979 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:47:19.984 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000088000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:47:30.660 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:47:50.671 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:47:50.676 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:47:50.676 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:47:50.682 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:47:54.448 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:48:14.454 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:48:14.459 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:48:14.461 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:48:14.469 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:48:38.140 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:48:58.147 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:48:58.151 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:48:58.152 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:48:58.155 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:52:39.012 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:52:59.020 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:52:59.030 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:52:59.031 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:52:59.036 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:53:17.040 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:53:37.048 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:53:37.054 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:53:37.054 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:53:37.058 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:54:50.900 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:55:10.904 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:55:10.907 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:55:10.908 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:55:10.910 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 21:59:19.697 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 21:59:39.705 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:59:39.709 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 21:59:39.710 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 21:59:39.711 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:00:07.228 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:00:27.294 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:00:27.296 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:00:27.298 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:00:27.300 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:29:13.229 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 22:29:33.242 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:29:33.247 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:29:33.248 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:29:33.263 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:31:35.694 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:31:55.702 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:31:55.706 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:31:55.707 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:31:55.709 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:33:35.580 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:33:55.588 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:33:55.590 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:33:55.591 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:33:55.596 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:33:55.653 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:34:15.658 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:34:15.663 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:34:15.664 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:34:15.672 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:34:15.726 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:34:35.735 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:34:35.739 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:34:35.740 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:34:35.742 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:35:35.462 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:35:55.472 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:35:55.477 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:35:55.478 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:35:55.484 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:42:08.804 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:42:28.817 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:42:28.823 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:42:28.824 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:42:28.825 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:44:20.017 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:44:40.035 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:44:40.040 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:44:40.041 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:44:40.046 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:48:58.128 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,44000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 22:49:18.133 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:49:18.139 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:49:18.140 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:49:18.161 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000044000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:51:29.595 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 22:51:49.600 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:51:49.604 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:51:49.605 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:51:49.608 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 22:52:40.018 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,110000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 22:53:00.023 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:53:00.027 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 22:53:00.027 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 22:53:00.030 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000110000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 23:03:01.070 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 23:03:21.083 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:03:21.084 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 23:03:21.085 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:03:21.085 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 23:03:32.340 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 23:03:52.346 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:03:52.348 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 23:03:52.348 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:03:52.350 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 23:05:50.506 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 23:06:10.511 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:06:10.513 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 23:06:10.514 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:06:10.516 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 23:16:14.277 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 23:16:34.287 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:16:34.293 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 23:16:34.295 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:16:34.298 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 23:22:25.855 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 23:22:45.863 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:22:45.866 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 23:22:45.867 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:22:45.873 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 23:24:22.954 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,132000,1,T0501,78175,0,0,11,5c 
+26-Jan-2019 23:24:42.959 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:24:42.963 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 23:24:42.964 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:24:42.969 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000132000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 
+26-Jan-2019 23:26:31.411 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,66000,1,T0501,78175,0,0,11,6c 
+26-Jan-2019 23:26:51.418 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:26:51.420 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+26-Jan-2019 23:26:51.422 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+26-Jan-2019 23:26:51.426 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000066000,000000000001,0000000T0501,78175     ,,,,,,,,,,0         ,,,,,,,, 

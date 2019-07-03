@@ -1,0 +1,1305 @@
+/*///////////
+////INICIO
+////////////*/
+#fondo_principal {
+  width: 100%;
+  position: relative;
+}
+
+#texto_1 {
+  position: absolute;
+  font-size: 1em;
+  top: 1140px;
+  left: 250px;
+  font-size: 40px;
+  color: white;
+}
+
+#texto_2 {
+  position: absolute;
+  font-size: 1em;
+  top: 1165px;
+  left: 250px;
+  font-size: 60px;
+  color: white;
+}
+
+.fondoIdentificacion {
+  height: 100%;
+  background-image: url("./img/colsanitas_soft-pag_2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+#error_message {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  font-size: 22px;
+  color: white;
+  width: 87%;
+  border: 0px;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(130, 193, 86, 0.5) 0%,
+    rgba(135, 197, 85, 0.5) 36%,
+    rgba(91, 165, 79, 0.5) 100%
+  );
+}
+
+#error_message_compra {
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  font-size: 22px;
+  color: white;
+  width: 620px;
+  border: 0px;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(130, 193, 86, 0.5) 0%,
+    rgba(135, 197, 85, 0.5) 36%,
+    rgba(91, 165, 79, 0.5) 100%
+  );
+}
+
+#error_message_contratos {
+  position: absolute;
+  top: 210px;
+  left: 50px;
+  font-size: 22px;
+  color: white;
+  width: 87%;
+  border: 0px;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(130, 193, 86, 0.5) 0%,
+    rgba(135, 197, 85, 0.5) 36%,
+    rgba(91, 165, 79, 0.5) 100%
+  );
+}
+
+#error_message_cancelados {
+  position: absolute;
+  left: 0px;
+  font-size: 22px;
+  color: white;
+  width: 87%;
+  border: 0px;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(130, 193, 86, 0.5) 0%,
+    rgba(135, 197, 85, 0.5) 36%,
+    rgba(91, 165, 79, 0.5) 100%
+  );
+}
+
+#spinner_compra {
+  position: absolute;
+  top: 300px;
+  left: 250px;
+}
+
+#imprimiendo {
+  position: absolute;
+  top: 300px;
+  left: 80px;
+  font-size: 24px;
+}
+
+#tdocumento {
+  position: absolute;
+  top: 250px;
+  left: 180px;
+  font-size: 30px;
+  color: white;
+}
+
+#tcedula {
+  position: absolute;
+  top: 380px;
+  left: 170px;
+  /* */
+  font-size: 30px;
+  color: #019fd9;
+}
+
+#imark {
+  position: absolute;
+  font-size: 1em;
+  top: 440px;
+  left: 190px;
+
+  font-size: 20px;
+  color: white;
+}
+
+#usr {
+  position: absolute;
+  top: 457px;
+  left: 200px;
+  width: 365px;
+  height: 50px;
+  border: 0px;
+  border-color: white;
+  font-family: "FNB Sans Regular";
+  font-size: 50px;
+  text-align: right;
+  color: black;
+  outline: 0 !important;
+}
+
+#usr::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 30px;
+}
+
+#keyboard {
+  position: absolute;
+  top: 560px;
+  left: 205px;
+  width: 365px;
+}
+
+#aceptar_borrar {
+  position: absolute;
+  top: 1025px;
+  outline: 0 !important;
+}
+
+#aceptar_borrar_cantidad {
+  position: absolute;
+  top: 1065px;
+  left: 20px;
+  outline: 0 !important;
+}
+
+#checkbox {
+  margin-right: 30px;
+  font-size: 20px;
+}
+/*Código para visualización de botón*/
+#invisible {
+  visibility: hidden;
+}
+/* Código por librerias de Bootstrap https://bootsnipp.com */
+.badgebox {
+  opacity: 0;
+}
+
+.badgebox + .badge {
+  /* Move the check mark away when unchecked */
+  text-indent: -999999px;
+  /* Makes the badge's width stay the same checked and unchecked */
+  width: 27px;
+}
+
+.badgebox:focus + .badge {
+  /* Set something to make the badge looks focused */
+  /* This really depends on the application, in my case it was: */
+
+  /* Adding a light border */
+  box-shadow: inset 0px 0px 5px;
+  /* Taking the difference out of the padding */
+}
+
+.badgebox:checked + .badge {
+  /* Move the check mark back when checked */
+  text-indent: 0;
+}
+
+#error-identificacion {
+  top: 560px;
+  left: 60px;
+  position: absolute;
+}
+
+#contract_1 {
+  position: absolute;
+  outline: 0 !important;
+  background: transparent;
+  border: 0px;
+  top: 370px;
+  left: 140px;
+}
+
+#contrato {
+  position: absolute;
+  top: 310px;
+  left: 50px;
+  font-size: 25px;
+  color: #019fd9;
+}
+
+#btn_contrato{
+  background: url("./img/buttons/primario.png");
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  align-content: center;
+  border: 0px;
+  outline: 0 !important;
+}
+
+#btn_contrato:hover{
+  background: url("./img/buttons/primario_h.png");
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  align-content: center;
+  border: 0px;
+  outline: 0 !important;
+}
+
+.boton_contrato {
+  background: url("./img/buttons/primario.png");
+  outline: 0 !important;
+}
+
+#contratoSinCompra {
+  position: absolute;
+  font-size: 1em;
+  top: 600px;
+  left: 150px;
+
+  font-size: 25px;
+  color: red;
+}
+
+#nombre_cliente {
+  position: absolute;
+  font-size: 1em;
+  top: 170px;
+  left: 50px;
+  font-size: 20px;
+  color: white;
+}
+
+#btn_primario {
+  background: url("./img/buttons/primario.png");
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  align-content: center;
+  color: darkblue;
+  border: 0px;
+  font-weight: bold;
+  font-family: "FNB Sans Regular";
+  outline: 0 !important;
+}
+
+#info_contrato {
+  position: absolute;
+  font-size: 1em;
+  top: 200px;
+  left: 50px;
+  font-size: 18px;
+  color: #019fd9;
+}
+
+#hr_1 {
+  position: absolute;
+  top: 230px;
+  left: 75px;
+  color: white;
+}
+
+#hr_2 {
+  position: absolute;
+  top: 320px;
+  left: 75px;
+  color: white;
+}
+
+#vale {
+  position: absolute;
+  top: 255px;
+  left: 350px;
+  font-size: 24px;
+  color: white;
+}
+
+#v_vale {
+  position: absolute;
+  top: 297px;
+  left: 575px;
+
+  font-size: 24px;
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  width: 105px;
+  text-align: right;
+}
+
+#cantidad {
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  font-size: 24px;
+  color: white;
+}
+
+#total {
+  position: absolute;
+  top: 350px;
+  left: 350px;
+  font-size: 24px;
+  color: white;
+}
+
+#tcompra {
+  position: absolute;
+  top: 460px;
+  left: 170px;
+  /*  */
+  font-size: 30px;
+  color: #019fd9;
+}
+
+#imarkCantidad {
+  position: absolute;
+  font-size: 1em;
+  top: 510px;
+  left: 200px;
+  font-size: 20px;
+  color: white;
+}
+
+#usrCantidad {
+  position: absolute;
+  top: 527px;
+  left: 210px;
+  width: 365px;
+  height: 50px;
+  border: 0px;
+  border-color: white;
+  font-family: "FNB Sans Regular";
+  font-size: 50px;
+  text-align: right;
+  color: black;
+  outline: 0 !important;
+}
+
+#keyboardCantidad {
+  position: absolute;
+  top: 610px;
+  left: 220px;
+  width: 365px;
+}
+
+#keyboard_2Cantidad {
+  position: absolute;
+  top: 1180px;
+  left: 60px;
+  width: 700px;
+  height: 50px;
+  border: 0px;
+  border-color: white;
+
+  font-size: 60px;
+  color: black;
+}
+
+#tdocumentoCompra {
+  position: absolute;
+  top: 250px;
+  left: 30px;
+
+  font-size: 20px;
+  color: white;
+}
+
+#terminarCompra {
+  position: absolute;
+  top: 700px;
+  left: 30px;
+
+  font-size: 30px;
+  color: white;
+}
+
+#mensaje-compra {
+  position: absolute;
+  top: 500px;
+  left: 30px;
+
+  font-size: 30px;
+  color: white;
+}
+
+#tipos_identificacion {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  border: 0px;
+  border-color: white;
+  font-size: 50px;
+  color: black;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tipoId {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+}
+
+#info_compra {
+  position: absolute;
+  font-size: 1em;
+  top: 262px;
+  left: 75px;
+
+  font-size: 18px;
+  color: white;
+}
+
+#instrucciones {
+  position: absolute;
+  top: 300px;
+  left: 80px;
+  z-index: 99;
+}
+
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+#boton_final {
+  position: absolute;
+  top: 550px;
+  left: 80px;
+  width: 80%;
+  height: 50px;
+  border: 0px;
+  border-color: white;
+
+  font-size: 60px;
+  color: black;
+}
+
+#mensaje_final {
+  position: absolute;
+  font-size: 1em;
+  top: 0px;
+  width: 400px;
+  left: 250px;
+}
+
+#mensaje_vales {
+  position: absolute;
+  font-size: 25px;
+  top: 280px;
+  width: 650px;
+  left: 0px;
+  text-align: left;
+}
+
+#imprimir {
+  background: url("./img/buttons/imprimir.png");
+  position: absolute;
+  font-size: 1em;
+  top: 250px;
+  left: 10px;
+
+  font-size: 40px;
+  color: white;
+}
+
+#imprimir:hover {
+  background: url("./img/buttons/imprimir_h.png");
+  position: absolute;
+  font-size: 1em;
+  top: 250px;
+  left: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+#salir {
+  background: url("./img/buttons/salir.png");
+  position: absolute;
+  top: 335px;
+  left: 51px;
+  border: 1px;
+}
+
+#salir:hover {
+  background: url("./img/buttons/salir_h.png");
+  position: absolute;
+  top: 335px;
+  left: 51px;
+  border: 1px;
+}
+
+#reintentar {
+  background: url("./img/buttons/reintentar.png");
+  position: absolute;
+  top: 335px;
+  left: 334px;
+  border: 0px;
+  outline: 0 !important;
+}
+
+#reintentar:hover {
+  background: url("./img/buttons/reintentar_h.png");
+  position: absolute;
+  top: 335px;
+  left: 334px;
+  border: 1px;
+}
+
+#icono {
+  position: absolute;
+  font-size: 1em;
+  top: 20px;
+  left: 0px;
+
+  font-size: 40px;
+  color: white;
+}
+
+#resultado {
+  position: absolute;
+  font-size: 1em;
+  top: 320px;
+  left: 80px;
+
+  font-size: 40px;
+  color: white;
+}
+
+#home_button {
+  background: url("./img/buttons/home.png");
+  position: absolute;
+  font-size: 1em;
+  top: 1220px;
+  left: 40px;
+  outline: 0 !important;
+  font-size: 40px;
+  color: white;
+  border: 1px;
+}
+
+#home_button:hover {
+  background: url("./img/buttons/home_h.png");
+}
+
+#home_button_compra {
+  background: url("./img/buttons/home.png");
+  position: absolute;
+  font-size: 1em;
+  top: 1260px;
+  left: 20px;
+  outline: 0 !important;
+  font-size: 40px;
+  color: white;
+  border: 1px;
+}
+
+#home_button_compra:hover {
+  background: url("./img/buttons/home_h.png");
+}
+
+#aceptar_button {
+  background: url("./img/buttons/aceptar.png");
+  position: absolute;
+  left: 384px;
+  border: 1px;
+  outline: 0 !important;
+}
+
+#aceptar_button:hover {
+  background: url("./img/buttons/aceptar_h.png");
+}
+
+#borrar_button {
+  background: url("./img/buttons/borrar.png");
+  position: absolute;
+  left: 101px;
+  border: 1px;
+  outline: 0 !important;
+}
+
+#borrar_button:hover {
+  background: url("./img/buttons/borrar_h.png");
+  position: absolute;
+  left: 101px;
+  border: 1px;
+}
+
+#uno {
+  background: url("./img/buttons/1.png");
+  position: absolute;
+  border: 1px;
+  outline: 0 !important;
+}
+
+#dos {
+  background: url("./img/buttons/2.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+  outline: 0 !important;
+}
+
+#tres {
+  background: url("./img/buttons/3.png");
+  position: absolute;
+  border: 1px;
+  left: 236px;
+  outline: 0 !important;
+}
+
+#cuatro {
+  background: url("./img/buttons/4.png");
+  position: absolute;
+  border: 1px;
+  top: 110px;
+  outline: 0 !important;
+}
+
+#cinco {
+  background: url("./img/buttons/5.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+  top: 110px;
+  outline: 0 !important;
+}
+
+#seis {
+  background: url("./img/buttons/6.png");
+  position: absolute;
+  border: 1px;
+  left: 236px;
+  top: 110px;
+  outline: 0 !important;
+}
+
+#siete {
+  background: url("./img/buttons/7.png");
+  position: absolute;
+  border: 1px;
+  top: 220px;
+  outline: 0 !important;
+}
+
+#ocho {
+  background: url("./img/buttons/8.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+  top: 220px;
+  outline: 0 !important;
+}
+
+#nueve {
+  background: url("./img/buttons/9.png");
+  position: absolute;
+  border: 1px;
+  left: 236px;
+  top: 220px;
+  outline: 0 !important;
+}
+
+#cero {
+  background: url("./img/buttons/0.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+  top: 330px;
+  outline: 0 !important;
+}
+
+#uno:hover {
+  background: url("./img/buttons/1_h.png");
+  position: absolute;
+  border: 1px;
+}
+
+#dos:hover {
+  background: url("./img/buttons/2_h.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+}
+
+#tres:hover {
+  background: url("./img/buttons/3_h.png");
+  position: absolute;
+  border: 1px;
+  left: 236px;
+}
+
+#cuatro:hover {
+  background: url("./img/buttons/4_h.png");
+  position: absolute;
+  border: 1px;
+  top: 110px;
+}
+
+#cinco:hover {
+  background: url("./img/buttons/5_h.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+  top: 110px;
+}
+
+#seis:hover {
+  background: url("./img/buttons/6_h.png");
+  position: absolute;
+  border: 1px;
+  left: 236px;
+  top: 110px;
+}
+
+#siete:hover {
+  background: url("./img/buttons/7_h.png");
+  position: absolute;
+  border: 1px;
+  top: 220px;
+}
+
+#ocho:hover {
+  background: url("./img/buttons/8_h.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+  top: 220px;
+}
+
+#nueve:hover {
+  background: url("./img/buttons/9_h.png");
+  position: absolute;
+  border: 1px;
+  left: 236px;
+  top: 220px;
+}
+
+#cero:hover {
+  background: url("./img/buttons/0_h.png");
+  position: absolute;
+  border: 1px;
+  left: 118px;
+  top: 330px;
+}
+
+#error_message_inicio {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 22px;
+  color: white;
+  border: 0px;
+  width: 620px;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(130, 193, 86, 0.5) 0%,
+    rgba(135, 197, 85, 0.5) 36%,
+    rgba(91, 165, 79, 0.5) 100%
+  );
+}
+
+#error_message_cantidad {
+  position: absolute;
+  top: 1220px;
+  left: 350px;
+  border: 0px;
+  font-size: 22px;
+  color: white;
+  width: 350px;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(130, 193, 86, 0.5) 0%,
+    rgba(135, 197, 85, 0.5) 36%,
+    rgba(91, 165, 79, 0.5) 100%
+  );
+}
+/* Inicio de CSS para Pantalla de Identificación Especial*/
+#keyboard_2 {
+  position: absolute;
+  top: 580px;
+  left: 2%;
+  width: 735px;
+  align-content: center;
+  text-align: center;
+}
+#b_1 {
+  background: url("./img/buttons/1.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_1:hover {
+  background: url("./img/buttons/1_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_2 {
+  background: url("./img/buttons/2.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_2:hover {
+  background: url("./img/buttons/2_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_3 {
+  background: url("./img/buttons/3.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_3:hover {
+  background: url("./img/buttons/3_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_4 {
+  background: url("./img/buttons/4.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_4:hover {
+  background: url("./img/buttons/4_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_5 {
+  background: url("./img/buttons/5.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_5:hover {
+  background: url("./img/buttons/5_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_6 {
+  background: url("./img/buttons/6.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_6:hover {
+  background: url("./img/buttons/6_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_7 {
+  background: url("./img/buttons/7.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_7:hover {
+  background: url("./img/buttons/7_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_8 {
+  background: url("./img/buttons/8.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_8:hover {
+  background: url("./img/buttons/8_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_9 {
+  background: url("./img/buttons/9.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_9:hover {
+  background: url("./img/buttons/9_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_0 {
+  background: url("./img/buttons/0.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_0:hover {
+  background: url("./img/buttons/0_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_Q {
+  background: url("./img/buttons/q.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_Q:hover {
+  background: url("./img/buttons/q_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_W {
+  background: url("./img/buttons/w.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_W:hover {
+  background: url("./img/buttons/w_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_E {
+  background: url("./img/buttons/e.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_E:hover {
+  background: url("./img/buttons/e_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_R {
+  background: url("./img/buttons/r.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_R:hover {
+  background: url("./img/buttons/r_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_T {
+  background: url("./img/buttons/t.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_T:hover {
+  background: url("./img/buttons/t_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_Y {
+  background: url("./img/buttons/y.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_Y:hover {
+  background: url("./img/buttons/y_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_U {
+  background: url("./img/buttons/u.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_U:hover {
+  background: url("./img/buttons/u_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_I {
+  background: url("./img/buttons/i.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_I:hover {
+  background: url("./img/buttons/i_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_O {
+  background: url("./img/buttons/o.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_O:hover {
+  background: url("./img/buttons/o_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_P {
+  background: url("./img/buttons/p.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_P:hover {
+  background: url("./img/buttons/p_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_A {
+  background: url("./img/buttons/a.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_A:hover {
+  background: url("./img/buttons/a_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_S {
+  background: url("./img/buttons/s.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_S:hover {
+  background: url("./img/buttons/s_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_D {
+  background: url("./img/buttons/d.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_D:hover {
+  background: url("./img/buttons/d_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_F {
+  background: url("./img/buttons/f.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_F:hover {
+  background: url("./img/buttons/f_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_G {
+  background: url("./img/buttons/g.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_G:hover {
+  background: url("./img/buttons/g_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_H {
+  background: url("./img/buttons/h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_H:hover {
+  background: url("./img/buttons/h_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_J {
+  background: url("./img/buttons/j.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_J:hover {
+  background: url("./img/buttons/j_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_K {
+  background: url("./img/buttons/k.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_K:hover {
+  background: url("./img/buttons/k_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_L {
+  background: url("./img/buttons/l.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_L:hover {
+  background: url("./img/buttons/l_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_Z {
+  background: url("./img/buttons/z.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_Z:hover {
+  background: url("./img/buttons/z_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_X {
+  background: url("./img/buttons/x.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_X:hover {
+  background: url("./img/buttons/x_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_C {
+  background: url("./img/buttons/c.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_C:hover {
+  background: url("./img/buttons/c_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_V {
+  background: url("./img/buttons/v.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_V:hover {
+  background: url("./img/buttons/v_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_B {
+  background: url("./img/buttons/b.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_B:hover {
+  background: url("./img/buttons/b_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_N {
+  background: url("./img/buttons/n.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_N:hover {
+  background: url("./img/buttons/n_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+#b_M {
+  background: url("./img/buttons/m.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  outline: 0 !important;
+}
+#b_M:hover {
+  background: url("./img/buttons/m_h.png");
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+}
+/* Fin de CSS para Pantalla de Identificación Especial*/

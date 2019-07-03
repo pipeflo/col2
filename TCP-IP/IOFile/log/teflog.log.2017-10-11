@@ -1,0 +1,1 @@
+11-oct-2017 15:12:42.041 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,5500,5,10,c111,8KS00007,0,0,PRUEBA2,0,63 

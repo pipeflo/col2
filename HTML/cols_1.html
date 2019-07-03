@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<script type="text/javascript">
+
+function solonumeros(e){
+	key=e.keycode || e.which;
+	teclado=String.fromCharCode(key);
+	numeros="0123456789";
+	especiales="8-37-39-46";
+	tecla_especial=false;
+	for(var i in especiales){
+		
+		if(key==especiales[i]){
+			tecla_especial=true;
+		}
+	}
+	if(numeros.indexOf(teclado)==-1 && !tecla_especial){
+		return false;
+	}
+}
+
+function eliminar(){
+	var anterior=document.login.display.value;
+	var nuevovalor=anterior.substring(0, anterior.length-1);
+	document.getElementById("usr").value=nuevovalor;
+}
+
+</script>
+<meta charset="utf-8">
+<title>Colsanitas</title>
+		<style>
+		#fondo_principal {
+			width: 100%;
+      		position: relative;
+		}
+		
+		#checkbox_1{
+		position: absolute;
+      	top: 310px;
+		left: 12%;
+		font-family: "FNB Sans Regular";
+		font-size: 18px;
+		color: white;
+		}
+						
+		#tdocumento{
+		position: absolute;
+      	font-size: 1em;
+     	top: 250px;
+		left: 260px;
+		font-family: "FNB Sans Regular";
+		font-size: 20px;
+		color: white;
+			}
+		
+		#tcedula{
+		position: absolute;
+      	font-size: 1em;
+     	top: 410px;
+		left: 265px;
+		font-family: "FNB Sans Regular";
+		font-size: 20px;
+		color: white;
+			}
+		
+		#imark{
+		position: absolute;
+      	font-size: 1em;
+     	top: 470px;
+		left: 50px;
+		font-family: "FNB Sans Regular";
+		font-size: 20px;
+		color: white;
+			}
+		
+		#usr{
+		position: absolute;
+     	top: 487px;
+		left: 60px;
+		width: 365px;
+		height: 50px;
+		border: 0px;
+		border-color: white;
+		font-family: "FNB Sans Regular";
+		font-size: 50px;
+		text-align: right;
+		color: black;
+			}
+		
+		#keyboard{
+		position: absolute;
+     	top: 590px;
+		left: 120px;
+		width: 365px;
+		height: 50px;
+		border: 0px;
+		border-color: white;
+		font-family: "FNB Sans Regular";
+		font-size: 60px;
+		color: black;
+			}
+			
+		#keyboard_2{
+		position: absolute;
+     	top: 850px;
+		left: 400px;
+		width: 365px;
+		height: 50px;
+		border: 0px;
+		border-color: white;
+		font-family: "FNB Sans Regular";
+		font-size: 60px;
+		color: black;
+			}
+			
+		#checkbox{
+		margin-right: 30px;
+			}
+	/*Código para visualización de botón*/
+		#invisible{
+		visibility: hidden;
+			}
+	/* Código por librerias de Bootstrap https://bootsnipp.com */		
+		.badgebox{
+    		opacity: 0;
+			}
+
+		.badgebox + .badge
+		{
+			/* Move the check mark away when unchecked */
+			text-indent: -999999px;
+			/* Makes the badge's width stay the same checked and unchecked */
+			width: 27px;
+		}
+
+		.badgebox:focus + .badge
+		{
+			/* Set something to make the badge looks focused */
+			/* This really depends on the application, in my case it was: */
+
+			/* Adding a light border */
+			box-shadow: inset 0px 0px 5px;
+			/* Taking the difference out of the padding */
+		}
+
+		.badgebox:checked + .badge
+		{
+			/* Move the check mark back when checked */
+			text-indent: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+<img id= "fondo_principal" src="images/colsanitas_soft-pag_2.jpg" width="748" height="1366" alt=""/>
+	<p id="tdocumento">Escoja su tipo de documento</p>
+		<div class="row text-center" id="checkbox_1">
+			<label id="checkbox" for="primary" class="btn btn-primary">Cedula de Ciudadanía <input type="checkbox" id="primary" class="badgebox"><span class="badge">&check;</span></label>
+			<label id="checkbox" for="second" class="btn btn-primary">Cedula de Extranjería <input type="checkbox" id="second" class="badgebox"><span class="badge">&check;</span></label>
+			<label id="checkbox" for="third" class="btn btn-primary">Pasaporte <input type="checkbox" id="third" class="badgebox"><span class="badge">&check;</span></label>
+		</div>
+	<p id="tcedula">Digite su número de cedula</p>
+	<img id="imark" src="images/input_mark.png"/>
+			<div class="form-group">
+			<form name="login">
+				
+			  <label for="usr"></label>
+			  <input type="text" class="form-control" id="usr" name="display" onkeypress="return solonumeros(event)">
+			
+				<div id="keyboard" class="form-group">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="1" onClick="login.display.value +='1'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="2" onClick="login.display.value +='2'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="3" onClick="login.display.value +='3'">
+					<br>
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="4" onClick="login.display.value +='4'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="5" onClick="login.display.value +='5'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="6" onClick="login.display.value +='6'">
+					<br>
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="7" onClick="login.display.value +='7'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="8" onClick="login.display.value +='8'">
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="9" onClick="login.display.value +='9'">
+					<br>
+					<button id="invisible" style="width:75px; height:75px; margin-bottom:3px" type="button" class="btn btn-primary">0</button>
+					<input style="width:75px; height:75px; margin-bottom:3px; font-size: 45px" type="button" class="btn btn-primary" value="0" onClick="login.display.value +='0'">
+					<button id="invisible" style="width:75px; height:75px; margin-bottom:3px" type="button" class="btn btn-primary">0</button>
+				</div>
+				<div class="form-group" id="keyboard_2">
+					<input style="width: 312px; height: 75px; margin-bottom:3px; font-size: 40px" type="button" class="btn btn-primary" value=" ACEPTAR" onclick="#"/>
+					<br>
+					<input style="width: 312px; height: 75px; font-size: 40px" type="button" class="btn btn-primary" value="BORRAR"  onclick="eliminar()"/>
+				</form>
+			</div>
+	
+</body>
+</html>

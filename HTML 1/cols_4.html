@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<!--- Start LightBox--->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
+	<!--- End LightBox--->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });	
+	</script>
+
+<meta charset="utf-8">
+<title>Colsanitas</title>
+		<style>
+		#fondo_principal {
+			width: 100%;
+      		position: relative;
+		}
+					
+		#payment{
+		position: absolute;
+     	top: 450px;
+		left: 100px;
+		border: 0px;
+		border-color: white;
+		font-family: "FNB Sans Regular";
+		font-size: 50px;
+		color: black;
+			}
+			
+		#pago{
+		position: absolute;
+      	font-size: 1em;
+     	top: 380px;
+		left: 245px;
+		font-family: "FNB Sans Regular";
+		font-size: 20px;
+		color: white;
+			}
+					
+					
+	</style>
+</head>
+
+<body>
+<img id= "fondo_principal" src="images/colsanitas_soft-pag_2.jpg" width="748" height="1366" alt=""/>
+	
+				<p id="pago">Seleccione el medio de pago</p>
+					<div class="form-group" id="payment">
+					<a href="images/instrucciones.jpg" data-toggle="lightbox" style="width: 250px; height: 180px; margin-bottom:3px; margin-right:30px; font-size: 30px; text-align: center;" class="btn btn-primary">
+						<span>TARJETA<br>DÉBITO</span><br>
+						<span class="glyphicon glyphicon-credit-card" aria-hidden="true" style="font-size:80px";></span>
+						</a>
+					<a style="width: 250px; height: 180px; margin-bottom:3px; margin-right:30px; font-size: 30px; text-align: center; align-content: center" type="button" class="btn btn-primary" onclick="#">
+						<span>TARJETA DE<br>CRÉDITO</span><br>
+						<span class="glyphicon glyphicon-credit-card" aria-hidden="true" style="font-size:80px";></span>
+						</a>
+					</div>
+	
+					
+	
+</body>
+</html>

@@ -1,0 +1,2 @@
+05-may-2017 11:56:53.772 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,10000,1379,8621,caja123,A102938B,0,100,80237OSCROM,16 
+05-may-2017 11:57:25.784 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,10000,1379,8621,caja123,A102938B,0,100,80237OSCROM,16 

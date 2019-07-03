@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+html, body { margin: 0; padding: 0; background-color: #000000; font-family: 'Open Sans', sans serif; font-weight: 300; -webkit-tap-highlight-color: transparent; }
+
+.rotate { display: none; color: #ffffff; position: absolute; left: 50%; top: 50%; text-align: center; width: 400px; height: 50px; margin-left: -200px; margin-top: -25px; }
+
+.keypadwrapper { text-align: center; width: 100%; color: #FFFFFF;
+
+	.inputwrapper { margin: 2em; line-height: 0.61em;   vertical-align: middle; }
+
+	.numberinput { display: inline-block; height: 15px; width: 15px; border-radius: 50px; border: 1px solid #FFFFFF; margin-right: 2%; margin-left: 2%; font-size: 2em; }
+
+	.keypad {
+		.numberline { width: 100%; }
+
+		#linefour { position: absolute; bottom: 10%; }
+
+		#linethree { position: absolute; bottom: 30%; }
+
+		#linetwo { position: absolute; bottom: 50%; }
+
+		#lineone { position: absolute; bottom: 70%; }
+
+		.content { display: inline-block; margin: 0 8%;
+
+			div { width: 4em; height: 4em; text-align: center; border: 1px solid #FFFFFF; border-radius: 70px; display: inline-block; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+
+				span:nth-child(1) { display: block; font-size: 1.8em; height: 1em; margin-top: 0.2em; }
+
+				span:nth-child(2) { font-size: 0.6em; }
+			}
+
+			div:hover { background-color: #ffffff; color: #000000; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+		}
+	}
+}
+
+.nocircle { width: auto !important; border: none !important; height: auto !important; }
+
+@media all and (max-width: 470px) {
+	.content { margin: 0 5% !important; }
+}
+
+@media all and (max-width: 350px) {
+	.content { margin: 0 2% !important; }
+}
+
+@media all and (max-height: 470px) {
+	#linefour { bottom: 2% !important; }
+
+	#linethree { bottom: 23% !important; }
+
+	#linetwo { bottom: 43% !important; }
+
+	#lineone { bottom: 63% !important; }
+}

@@ -1,0 +1,354 @@
+10-Apr-2019 12:41:43.262 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,62400,0,0,KIOSKO_602,000A7UC5,549179,010107308,0,0,dataf001,75 
+10-Apr-2019 12:42:03.285 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:42:03.301 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 12:42:03.301 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:42:03.301 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000062400,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,549179    ,,,,010107308              ,,,, 
+10-Apr-2019 12:42:06.210 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,62400,0,0,KIOSKO_602,000A7UDV,549179,010811792,0,0,dataf001,18 
+10-Apr-2019 12:42:26.224 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:42:26.224 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 12:42:26.224 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:42:26.224 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000062400,000000000000,000000000000,KIOSKO_602,,,000A7UDV,,,,,,,549179    ,,,,010811792              ,,,, 
+10-Apr-2019 12:46:00.201 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,201118,010107308,0,0,dataf001,79 
+10-Apr-2019 12:46:20.201 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:46:20.201 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 12:46:20.201 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:46:20.201 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,201118    ,,,,010107308              ,,,, 
+10-Apr-2019 12:48:18.969 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,93600,0,0,KIOSKO_602,000A7UC5,79002,010107308,0,0,dataf001,42 
+10-Apr-2019 12:48:38.971 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:48:38.971 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 12:48:38.971 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:48:38.971 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000093600,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,79002     ,,,,010107308              ,,,, 
+10-Apr-2019 12:48:48.978 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,93600,0,0,KIOSKO_602,000A7UDV,79002,010811792,0,0,dataf001,2f 
+10-Apr-2019 12:49:08.978 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:49:08.978 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 12:49:08.978 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:49:08.978 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000093600,000000000000,000000000000,KIOSKO_602,,,000A7UDV,,,,,,,79002     ,,,,010811792              ,,,, 
+10-Apr-2019 12:50:36.690 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,245207,010107308,0,0,dataf001,74 
+10-Apr-2019 12:50:56.699 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:50:56.699 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 12:50:56.699 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 12:50:56.704 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,245207    ,,,,010107308              ,,,, 
+10-Apr-2019 13:03:00.440 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,93600,0,0,KIOSKO_602,000A7UC5,284715,010107308,0,0,dataf001,73 
+10-Apr-2019 13:03:20.446 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:03:20.446 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 13:03:20.446 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:03:20.446 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000093600,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,284715    ,,,,010107308              ,,,, 
+10-Apr-2019 13:03:20.497 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,818496,010107308,0,0,dataf001,78 
+10-Apr-2019 13:03:40.510 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:03:40.510 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 13:03:40.510 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:03:40.510 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,818496    ,,,,010107308              ,,,, 
+10-Apr-2019 13:03:40.560 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UDV,818496,010811792,0,0,dataf001,15 
+10-Apr-2019 13:04:00.571 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:04:00.571 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 13:04:00.571 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:04:00.571 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UDV,,,,,,,818496    ,,,,010811792              ,,,, 
+10-Apr-2019 13:10:30.215 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,869382,010107308,0,0,dataf001,7c 
+10-Apr-2019 13:10:50.220 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:10:50.220 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 13:10:50.220 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 13:10:50.220 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,869382    ,,,,010107308              ,,,, 
+10-Apr-2019 14:33:20.463 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,107871,010107308,0,0,dataf001,7a 
+10-Apr-2019 14:33:40.525 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 14:33:40.619 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 14:33:40.619 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 14:33:40.635 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,107871    ,,,,010107308              ,,,, 
+10-Apr-2019 15:02:11.412 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,952089,010107308,0,0,dataf001,7d 
+10-Apr-2019 15:02:31.419 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 15:02:31.419 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 15:02:31.419 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 15:02:31.419 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,952089    ,,,,010107308              ,,,, 
+10-Apr-2019 15:54:42.428 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,834795,010107308,0,0,dataf001,76 
+10-Apr-2019 15:54:49.485 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 65 02 00 96 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 34 35 00 00 1c 35 33 00 00 1c 37 37 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 1c 39 35 00 13 34 30 30 35 35 38 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 9d  
+10-Apr-2019 15:54:49.510 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 15:54:49.515 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 c8 02 01 95 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 32 00 0a 4b 49 4f 53 4b 4f 5f 36 30 32 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 35 33 00 0a 38 33 34 37 39 35 20 20 20 20 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 33 00 0c 64 61 74 61 66 30 30 31 20 20 20 20 1c 38 34 00 00 03 c4  
+10-Apr-2019 15:54:50.100 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+10-Apr-2019 15:54:56.530 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 01 2d 02 02 96 36 30 30 30 30 30 30 30 30 30 31 32 30 30 30 30 30 1c 30 31 00 06 20 20 20 20 20 20 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 33 00 06 30 30 30 30 30 30 1c 34 34 00 06 30 30 30 30 30 30 1c 34 35 00 08 30 30 30 30 30 30 30 30 1c 34 36 00 06 30 30 30 30 30 30 1c 34 37 00 04 30 30 30 30 1c 34 38 00 02 58 58 1c 34 39 00 0a 56 49 53 41 20 20 20 20 20 20 1c 35 30 00 02 20 20 1c 35 31 00 02 30 30 1c 35 34 00 04 38 38 32 35 1c 37 35 00 06 34 30 30 35 35 38 1c 37 36 00 04 31 38 31 32 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 37 38 00 17 43 61 6c 6c 65 20 36 34 20 32 31 2d 30 35 20 20 20 20 20 20 20 20 20 1c 37 39 00 02 30 30 1c 38 35 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 36 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 03 c3  
+10-Apr-2019 15:54:56.530 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 15:54:56.530 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 02,      ,000000031200,000000000000,000000000000,KIOSKO_602,000000,000000,00000000,000000,0000,XX,VISA      ,  ,00,834795    ,8825,400558,1812,010107308              ,Calle 64 21-05         ,00,000000000000,000000000000 
+10-Apr-2019 16:03:50.834 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,891279,010107308,0,0,dataf001,7e 
+10-Apr-2019 16:04:10.836 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:04:10.836 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 16:04:10.836 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:04:10.836 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,891279    ,,,,010107308              ,,,, 
+10-Apr-2019 16:08:04.273 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,804993,010107308,0,0,dataf001,7d 
+10-Apr-2019 16:08:14.814 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 65 02 00 96 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 34 35 00 00 1c 35 33 00 00 1c 37 37 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 1c 39 35 00 13 35 38 39 35 32 36 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 03 9e  
+10-Apr-2019 16:08:14.814 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:08:14.814 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 c8 02 01 95 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 32 00 0a 4b 49 4f 53 4b 4f 5f 36 30 32 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 35 33 00 0a 38 30 34 39 39 33 20 20 20 20 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 33 00 0c 64 61 74 61 66 30 30 31 20 20 20 20 1c 38 34 00 00 03 cf  
+10-Apr-2019 16:08:15.579 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+10-Apr-2019 16:08:41.054 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 01 45 02 03 20 36 30 30 30 30 30 30 30 30 30 31 32 30 30 30 30 30 1c 30 31 00 06 31 36 37 31 30 31 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 33 00 06 30 30 30 30 30 39 1c 34 34 00 06 30 30 30 30 31 37 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 34 36 00 06 31 39 30 34 31 30 1c 34 37 00 04 31 36 30 38 1c 34 38 00 02 30 30 1c 34 39 00 0a 4d 41 53 54 45 52 43 41 52 44 1c 35 30 00 02 44 42 1c 35 31 00 02 30 30 1c 35 34 00 04 32 38 38 30 1c 37 35 00 06 35 38 39 35 32 36 1c 37 36 00 04 32 31 31 30 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 37 38 00 17 43 61 6c 6c 65 20 36 34 20 32 31 2d 30 35 20 20 20 20 20 20 20 20 20 1c 37 39 00 02 30 30 1c 38 35 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 36 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 39 35 00 13 35 38 39 35 32 36 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 03 37  
+10-Apr-2019 16:08:41.054 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:08:41.054 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 00,167101,000000031200,000000000000,000000000000,KIOSKO_602,000009,000017,000A7UC5,190410,1608,00,MASTERCARD,DB,00,804993    ,2880,589526,2110,010107308              ,Calle 64 21-05         ,00,000000000000,000000000000 
+10-Apr-2019 16:11:58.505 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,754472,010107308,0,0,dataf001,75 
+10-Apr-2019 16:12:18.507 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:12:18.507 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 16:12:18.507 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:12:18.507 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,754472    ,,,,010107308              ,,,, 
+10-Apr-2019 16:12:22.442 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UDV,754472,010811792,0,0,dataf001,18 
+10-Apr-2019 16:12:34.907 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 65 02 00 96 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 34 35 00 00 1c 35 33 00 00 1c 37 37 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 1c 39 35 00 13 34 39 36 30 38 34 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 96  
+10-Apr-2019 16:12:34.907 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:12:34.907 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 c8 02 01 95 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 32 00 0a 4b 49 4f 53 4b 4f 5f 36 30 32 1c 34 35 00 08 30 30 30 41 37 55 44 56 1c 35 33 00 0a 37 35 34 34 37 32 20 20 20 20 1c 37 37 00 17 30 31 30 38 31 31 37 39 32 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 33 00 0c 64 61 74 61 66 30 30 31 20 20 20 20 1c 38 34 00 00 03 aa  
+10-Apr-2019 16:12:35.593 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+10-Apr-2019 16:12:47.761 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 01 2d 02 02 96 36 30 30 30 30 30 30 30 30 30 31 32 30 30 30 30 30 1c 30 31 00 06 20 20 20 20 20 20 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 33 00 06 30 30 30 30 30 30 1c 34 34 00 06 30 30 30 30 30 30 1c 34 35 00 08 30 30 30 30 30 30 30 30 1c 34 36 00 06 30 30 30 30 30 30 1c 34 37 00 04 30 30 30 30 1c 34 38 00 02 58 58 1c 34 39 00 0a 20 20 20 20 20 20 20 20 20 20 1c 35 30 00 02 20 20 1c 35 31 00 02 30 30 1c 35 34 00 04 30 30 39 32 1c 37 35 00 06 34 39 36 30 38 34 1c 37 36 00 04 30 30 30 30 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 37 38 00 17 43 61 6c 6c 65 20 36 34 20 32 31 2d 30 35 20 20 20 20 20 20 20 20 20 1c 37 39 00 02 30 30 1c 38 35 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 36 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 03 c3  
+10-Apr-2019 16:12:47.761 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:12:47.761 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 02,      ,000000031200,000000000000,000000000000,KIOSKO_602,000000,000000,00000000,000000,0000,XX,          ,  ,00,754472    ,0092,496084,0000,010107308              ,Calle 64 21-05         ,00,000000000000,000000000000 
+10-Apr-2019 16:15:20.853 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,382311,010107308,0,0,dataf001,78 
+10-Apr-2019 16:15:30.512 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 65 02 00 96 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 34 35 00 00 1c 35 33 00 00 1c 37 37 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 1c 39 35 00 13 34 39 36 30 38 34 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 96  
+10-Apr-2019 16:15:30.512 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:15:30.528 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 c8 02 01 95 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 32 00 0a 4b 49 4f 53 4b 4f 5f 36 30 32 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 35 33 00 0a 33 38 32 33 31 31 20 20 20 20 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 33 00 0c 64 61 74 61 66 30 30 31 20 20 20 20 1c 38 34 00 00 03 ca  
+10-Apr-2019 16:15:31.074 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+10-Apr-2019 16:16:01.089 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendMessage(TEFAuthorizationWorker.java:164)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:254)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:16:01.089 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 03,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,382311    ,,,,010107308              ,,,, 
+10-Apr-2019 16:16:01.417 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UDV,382311,010811792,0,0,dataf001,15 
+10-Apr-2019 16:16:04.849 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 01 45 02 03 20 36 30 30 30 30 30 30 30 30 30 31 32 30 30 30 30 30 1c 30 31 00 06 32 32 39 34 35 37 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 33 00 06 30 30 30 30 31 30 1c 34 34 00 06 30 30 30 30 31 38 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 34 36 00 06 31 39 30 34 31 30 1c 34 37 00 04 31 36 31 36 1c 34 38 00 02 30 30 1c 34 39 00 0a 56 49 53 41 20 20 20 20 20 20 1c 35 30 00 02 43 52 1c 35 31 00 02 30 31 1c 35 34 00 04 30 30 39 32 1c 37 35 00 06 34 39 36 30 38 34 1c 37 36 00 04 32 34 30 31 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 37 38 00 17 43 61 6c 6c 65 20 36 34 20 32 31 2d 30 35 20 20 20 20 20 20 20 20 20 1c 37 39 00 02 30 30 1c 38 35 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 36 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 39 35 00 13 34 39 36 30 38 34 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 25  
+10-Apr-2019 16:16:04.849 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: FUNCION_NO_CORRESPONDE
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:229)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:16:04.849 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 16:16:04.849 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UDV,,,,,,,382311    ,,,,010811792              ,,,, 
+10-Apr-2019 16:20:57.710 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,927825,010107308,0,0,dataf001,71 
+10-Apr-2019 16:21:17.723 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:209)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:21:17.738 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 16:21:17.738 ERROR com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:128) ERROR_dataf001 
+java.io.IOException: Unavailable socket
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.getBos(TEFAuthorizationWorker.java:258)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendData(TEFAuthorizationWorker.java:119)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendFormattedData(TEFAuthorizationWorker.java:136)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.refusesMessage(TEFAuthorizationWorker.java:172)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:291)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:21:17.754 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,927825    ,,,,010107308              ,,,, 
+10-Apr-2019 16:21:26.034 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,976165,010107308,0,0,dataf001,78 
+10-Apr-2019 16:21:34.070 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 65 02 00 96 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 34 35 00 00 1c 35 33 00 00 1c 37 37 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 1c 39 35 00 13 35 33 30 37 31 30 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 91  
+10-Apr-2019 16:21:34.070 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:21:34.070 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 c8 02 01 95 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 32 00 0a 4b 49 4f 53 4b 4f 5f 36 30 32 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 35 33 00 0a 39 37 36 31 36 35 20 20 20 20 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 33 00 0c 64 61 74 61 66 30 30 31 20 20 20 20 1c 38 34 00 00 03 ca  
+10-Apr-2019 16:21:34.569 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+10-Apr-2019 16:21:37.908 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 01 2d 02 02 96 36 30 30 30 30 30 30 30 30 30 31 32 30 30 30 30 30 1c 30 31 00 06 20 20 20 20 20 20 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 33 00 06 30 30 30 30 30 30 1c 34 34 00 06 30 30 30 30 30 30 1c 34 35 00 08 30 30 30 30 30 30 30 30 1c 34 36 00 06 30 30 30 30 30 30 1c 34 37 00 04 30 30 30 30 1c 34 38 00 02 58 58 1c 34 39 00 0a 20 20 20 20 20 20 20 20 20 20 1c 35 30 00 02 20 20 1c 35 31 00 02 30 30 1c 35 34 00 04 39 36 37 34 1c 37 35 00 06 35 33 30 37 31 30 1c 37 36 00 04 30 30 30 30 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 37 38 00 17 43 61 6c 6c 65 20 36 34 20 32 31 2d 30 35 20 20 20 20 20 20 20 20 20 1c 37 39 00 02 30 30 1c 38 35 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 36 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 03 c3  
+10-Apr-2019 16:21:37.908 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:21:37.908 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 02,      ,000000031200,000000000000,000000000000,KIOSKO_602,000000,000000,00000000,000000,0000,XX,          ,  ,00,976165    ,9674,530710,0000,010107308              ,Calle 64 21-05         ,00,000000000000,000000000000 
+10-Apr-2019 16:22:28.448 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,717235,010107308,0,0,dataf001,77 
+10-Apr-2019 16:22:37.983 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 65 02 00 96 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 34 35 00 00 1c 35 33 00 00 1c 37 37 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 1c 39 35 00 13 35 33 30 37 31 30 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 91  
+10-Apr-2019 16:22:37.983 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:22:37.983 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 c8 02 01 95 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 32 00 0a 4b 49 4f 53 4b 4f 5f 36 30 32 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 35 33 00 0a 37 31 37 32 33 35 20 20 20 20 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 33 00 0c 64 61 74 61 66 30 30 31 20 20 20 20 1c 38 34 00 00 03 c5  
+10-Apr-2019 16:22:38.561 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+10-Apr-2019 16:23:08.575 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: ERROR_TIME_OUT
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.receiveRequest(TEFAuthorizationWorker.java:67)
+	at com.visa.tef.controller.comm.TEFAuthorizationWorker.sendMessage(TEFAuthorizationWorker.java:164)
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:254)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:23:08.575 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 03,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UC5,,,,,,,717235    ,,,,010107308              ,,,, 
+10-Apr-2019 16:23:09.012 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UDV,717235,010811792,0,0,dataf001,1a 
+10-Apr-2019 16:23:11.445 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 01 45 02 03 20 36 30 30 30 30 30 30 30 30 30 31 32 30 30 30 30 30 1c 30 31 00 06 20 20 20 20 20 20 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 33 00 06 30 30 30 30 31 31 1c 34 34 00 06 30 30 30 30 30 30 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 34 36 00 06 31 39 30 34 31 30 1c 34 37 00 04 31 36 32 32 1c 34 38 00 02 58 58 1c 34 39 00 0a 43 52 45 44 45 4e 43 49 41 4c 1c 35 30 00 02 44 42 1c 35 31 00 02 30 30 1c 35 34 00 04 39 36 37 34 1c 37 35 00 06 35 33 30 37 31 30 1c 37 36 00 04 32 33 30 31 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 37 38 00 17 43 61 6c 6c 65 20 36 34 20 32 31 2d 30 35 20 20 20 20 20 20 20 20 20 1c 37 39 00 02 30 30 1c 38 35 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 36 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 39 35 00 13 35 33 30 37 31 30 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 22  
+10-Apr-2019 16:23:11.445 ERROR com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:284) ERROR_dataf001 
+com.visa.tef.exception.TefException: FUNCION_NO_CORRESPONDE
+	at com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:229)
+	at com.visa.tef.controller.TEFWorker.processRequest(TEFWorker.java:73)
+	at com.visa.tef.controller.TEFWorker.run(TEFWorker.java:49)
+10-Apr-2019 16:23:11.445 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 15  
+10-Apr-2019 16:23:11.445 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 05,,000000031200,000000000000,000000000000,KIOSKO_602,,,000A7UDV,,,,,,,717235    ,,,,010811792              ,,,, 
+10-Apr-2019 16:27:16.056 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:172) REQUEST__dataf001: 01,31200,0,0,KIOSKO_602,000A7UC5,398112,010107308,0,0,dataf001,72 
+10-Apr-2019 16:27:25.425 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 65 02 00 96 36 30 30 30 30 30 30 30 30 30 31 30 30 30 20 20 30 1c 34 30 00 00 1c 34 31 00 00 1c 38 30 00 00 1c 34 32 00 00 1c 34 35 00 00 1c 35 33 00 00 1c 37 37 00 00 1c 38 31 00 00 1c 38 32 00 00 1c 38 33 00 00 1c 38 34 00 00 1c 39 35 00 13 34 39 31 35 31 31 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 98  
+10-Apr-2019 16:27:25.425 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:27:25.441 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 c8 02 01 95 36 30 30 30 30 30 30 30 30 30 31 30 30 30 30 30 30 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 32 00 0a 4b 49 4f 53 4b 4f 5f 36 30 32 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 35 33 00 0a 33 39 38 31 31 32 20 20 20 20 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 38 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 32 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 33 00 0c 64 61 74 61 66 30 30 31 20 20 20 20 1c 38 34 00 00 03 c0  
+10-Apr-2019 16:27:26.065 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 00 01 06  
+10-Apr-2019 16:27:47.343 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: RECV] 01 45 02 03 20 36 30 30 30 30 30 30 30 30 30 31 32 30 30 30 30 30 1c 30 31 00 06 31 39 31 34 34 38 1c 34 30 00 0c 30 30 30 30 30 30 30 33 31 32 30 30 1c 34 31 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 30 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 34 33 00 06 30 30 30 30 31 32 1c 34 34 00 06 30 30 30 30 32 30 1c 34 35 00 08 30 30 30 41 37 55 43 35 1c 34 36 00 06 31 39 30 34 31 30 1c 34 37 00 04 31 36 32 37 1c 34 38 00 02 30 30 1c 34 39 00 0a 56 49 53 41 20 20 20 20 20 20 1c 35 30 00 02 45 4c 1c 35 31 00 02 30 30 1c 35 34 00 04 37 30 30 32 1c 37 35 00 06 34 39 31 35 31 31 1c 37 36 00 04 32 33 31 32 1c 37 37 00 17 30 31 30 31 30 37 33 30 38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 1c 37 38 00 17 43 61 6c 6c 65 20 36 34 20 32 31 2d 30 35 20 20 20 20 20 20 20 20 20 1c 37 39 00 02 30 30 1c 38 35 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 38 36 00 0c 30 30 30 30 30 30 30 30 30 30 30 30 1c 39 35 00 13 34 39 31 35 31 31 2a 2a 2a 2a 2a 2a 2a 2a 2a 2a 20 20 20 03 32  
+10-Apr-2019 16:27:47.343 DEBUG com.visa.tef.controller.comm.TEFAuthorizationWorker.trace(TEFAuthorizationWorker.java:282) [dataf001: SEND] 00 01 06  
+10-Apr-2019 16:27:47.343 INFO com.visa.tef.controller.TEFTransactionManager.getTEFAuthorization(TEFTransactionManager.java:322) RESPONSE_dataf001: 00,191448,000000031200,000000000000,000000000000,KIOSKO_602,000012,000020,000A7UC5,190410,1627,00,VISA      ,EL,00,398112    ,7002,491511,2312,010107308              ,Calle 64 21-05         ,00,000000000000,000000000000 
