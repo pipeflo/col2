@@ -4,8 +4,9 @@ import {
   SET_VALOR_VALE,
   BORRAR_COMPRA_ACTUAL,
   CONTRATO_LOADING,
-  TIRA_AUDITORA_LOADING
-} from "../actions/types";
+  TIRA_AUDITORA_LOADING,
+  SET_INDEX_CITA
+} from '../actions/types';
 
 const initialState = {
   cargando: false,
@@ -13,12 +14,13 @@ const initialState = {
   valorVale: 0,
   valorTotal: 0,
   cantidad: 0,
-  stringCompra: "",
+  stringCompra: '',
   contrato: {},
   tiraAuditora: {},
   idTransaccion: 0,
-  transaccion: "",
-  valeElectronico: []
+  transaccion: '',
+  valeElectronico: [],
+  indexCita: -1
 };
 
 export default function(state = initialState, action) {
@@ -47,13 +49,18 @@ export default function(state = initialState, action) {
       };
     case CONTRATO_LOADING:
       return {
-        ...initialState,
+        ...state,
         cargando: action.payload
       };
     case TIRA_AUDITORA_LOADING:
       return {
         ...state,
         cargando: action.payload
+      };
+    case SET_INDEX_CITA:
+      return {
+        ...state,
+        indexCita: action.payload
       };
     default:
       return state;

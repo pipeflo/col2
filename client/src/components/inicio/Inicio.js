@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import {
   traerTiposIdentificacion,
   asignarTipoIdentificacion
-} from "../../actions/inicioActions";
-import Spinner from "../common/Spinner";
+} from '../../actions/inicioActions';
+import Spinner from '../common/Spinner';
 
 class Inicio extends Component {
   constructor() {
@@ -31,25 +31,25 @@ class Inicio extends Component {
       if (nextProps.errors.mensaje) {
         this.setState({
           timeOut: setTimeout(function() {
-            props.history.push("/");
+            props.history.push('/');
           }, 10000)
         });
       }
     }
 
     if (nextProps.beneficiario.tipoIdentificacion) {
-      this.props.history.push("/identificacion");
+      this.props.history.push('/identificacion');
     }
   }
 
   handleTimeOut() {
-    this.props.history.push("/");
+    this.props.history.push('/');
   }
 
   onClick(e) {
     e.preventDefault();
 
-    const codTipoIdentificacion = e.target.getAttribute("value");
+    const codTipoIdentificacion = e.target.getAttribute('value');
 
     this.props.asignarTipoIdentificacion(
       this.props.tiposIdentificacion.tipos[codTipoIdentificacion]
@@ -64,7 +64,7 @@ class Inicio extends Component {
     let htmlTiposIdentificacion;
     if (errors.mensaje) {
       htmlTiposIdentificacion = (
-        <div id="error_message_inicio" className="alert alert-info">
+        <div id='error_message_inicio' className='alert alert-info'>
           {errors.mensaje}
         </div>
       );
@@ -74,21 +74,21 @@ class Inicio extends Component {
           <Link
             key={tipo.codTipoIdentificacion}
             style={{
-              width: "200px",
-              height: "200px",
-              marginBottom: "15px",
-              marginRight: "80px",
-              fontSize: "22px",
-              alignContent: "center",
-              whiteSpace: "normal",
-              overflowWrap: "break-word",
-              paddingTop: "8%"
+              width: '200px',
+              height: '200px',
+              marginBottom: '15px',
+              marginRight: '80px',
+              fontSize: '22px',
+              alignContent: 'center',
+              whiteSpace: 'normal',
+              overflowWrap: 'break-word',
+              paddingTop: '8%'
             }}
             value={i}
-            id="btn_primario"
-            className="btn btn-primary"
+            id='btn_primario'
+            className='btn btn-primary'
             onClick={funciones.onClick}
-            to="#"
+            to='#'
           >
             {tipo.descripcion}
           </Link>
@@ -98,24 +98,24 @@ class Inicio extends Component {
 
     if (cargando) {
       contenido = (
-        <div className="principal">
+        <div className='principal'>
           <Spinner />
         </div>
       );
     } else {
       contenido = (
-        <div className="principal">
+        <div className='principal'>
           <img
-            id="fondo_principal"
-            src="../../img/colsanitas_soft-pag_2.jpg"
-            width="748"
-            height="1366"
-            alt=""
+            id='fondo_principal'
+            src='../../img/colsanitas_soft-pag_2.jpg'
+            width='748'
+            height='1366'
+            alt=''
           />
-          <p id="nombre_cliente">
+          <p id='nombre_cliente'>
             POR FAVOR SELECCIONE SU TIPO DE IDENTIFICACIÓN PARA INICIAR
           </p>
-          <div className="form-group" id="tipos_identificacion">
+          <div className='form-group' id='tipos_identificacion'>
             {htmlTiposIdentificacion}
           </div>
         </div>

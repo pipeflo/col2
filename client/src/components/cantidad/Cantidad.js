@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Button } from "react-bootstrap";
-import { connect } from "react-redux";
-import { iniciarCompra } from "../../actions/cantidadActions";
-import { reiniciarCompra } from "../../actions/identificacionActions";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Button } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { iniciarCompra } from '../../actions/cantidadActions';
+import { reiniciarCompra } from '../../actions/identificacionActions';
 
 class Cantidad extends Component {
   constructor() {
@@ -18,6 +18,7 @@ class Cantidad extends Component {
       errors: {},
       timeOut: null
     };
+    console.log('Entro a cantidad');
   }
 
   isEmpty(obj) {
@@ -29,7 +30,7 @@ class Cantidad extends Component {
 
   componentDidMount() {
     if (this.props.compra.valorVale === 0) {
-      this.props.history.push("/identificacion");
+      this.props.history.push('/identificacion');
     }
     this.setState({
       beneficiario: this.props.beneficiario,
@@ -51,12 +52,12 @@ class Cantidad extends Component {
     }
 
     if (nextProps.compra.inicioCompra) {
-      console.log("Populo compra");
-      this.props.history.push("/compra");
+      console.log('Populo compra');
+      this.props.history.push('/compra');
     }
 
     if (nextProps.beneficiario.contratos.length === 0) {
-      this.props.history.push("/");
+      this.props.history.push('/');
     }
   }
 
@@ -71,24 +72,38 @@ class Cantidad extends Component {
   onClick = e => {
     e.preventDefault();
     clearTimeout(this.timeOut);
-    if (e.target.value === "BORRAR") {
+    switch (e.target.value) {
+      case 'Si':
+        console.log('Iniciar compra para 1 vales');
+        const compraData = {
+          idTransaccion: Math.floor(Math.random() * 1000000 + 1),
+          cantidad: 1,
+          valorVale: this.state.compra.valorVale,
+          valorTotal:
+            parseInt(this.state.compra.cantidad) *
+            parseInt(this.state.compra.valorVale),
+          codigoCompania: this.state.compra.contrato.codigoCompania
+        };
+
+        this.props.iniciarCompra(compraData);
+        break;
+      case 'No':
+        console.log('Dio click en No');
+        this.props.history.push('/ventanilla');
+        break;
+      case 'SALIR':
+        this.props.reiniciarCompra({});
+        break;
+      default:
+        console.log('Dio click en boton:', e.target.value);
+        break;
+    }
+    if (e.target.value === 'BORRAR') {
       let compra = Object.assign({}, this.state.compra); //creating copy of object
       compra.cantidad = 0; //updating value
       this.setState({ compra });
-    } else if (e.target.value === "ACEPTAR") {
-      console.log("Iniciar compra para ", this.state.compra.cantidad, "vales");
-      const compraData = {
-        idTransaccion: Math.floor(Math.random() * 1000000 + 1),
-        cantidad: this.state.compra.cantidad,
-        valorVale: this.state.compra.valorVale,
-        valorTotal:
-          parseInt(this.state.compra.cantidad) *
-          parseInt(this.state.compra.valorVale),
-        codigoCompania: this.state.compra.contrato.codigoCompania
-      };
-
-      this.props.iniciarCompra(compraData);
-    } else if (e.target.value === "SALIR") {
+    } else if (e.target.value === 'ACEPTAR') {
+    } else if (e.target.value === 'SALIR') {
       this.props.reiniciarCompra({});
     } else {
       if (this.state.compra.cantidad === 0) {
@@ -106,143 +121,67 @@ class Cantidad extends Component {
   render() {
     const { errors, beneficiario, compra } = this.state;
     const numeroStyle = {
-      width: "120px",
-      height: "120px",
-      marginBottom: "20px",
-      marginRight: "20px",
-      fontSize: "45px",
-      backgroundSize: "cover"
+      width: '120px',
+      height: '120px',
+      marginBottom: '20px',
+      marginRight: '20px',
+      fontSize: '45px',
+      backgroundSize: 'cover'
     };
 
     return (
       <div>
         <img
-          id="fondo_principal"
-          src="../../img/colsanitas_soft-pag_2.jpg"
-          width="748"
-          height="1366"
-          alt=""
+          id='fondo_principal'
+          src='../../img/colsanitas_soft-pag_2.jpg'
+          width='748'
+          height='1366'
+          alt=''
         />
-        <p id="nombre_cliente">{beneficiario.nombre} </p>
-        <p id="info_contrato">
-          {compra.contrato.nombreProducto} No. Contrato:{" "}
+        <p id='nombre_cliente'>{beneficiario.nombre} </p>
+        <p id='info_contrato'>
+          {compra.contrato.nombreProducto} No. Contrato:{' '}
           {compra.contrato.numeroContrato}
         </p>
-        <hr id="hr_1" color="white" size="2" width="600" />
-        <p id="vale">Valor del vale: ${compra.valorVale}</p>
-        <p id="cantidad">Cantidad: {compra.cantidad}</p>
-        <hr id="hr_2" color="white" size="2" width="600" />
-        <p id="total">
-          TOTAL: ${parseInt(compra.cantidad) * parseInt(compra.valorVale)}
+        <hr id='hr_1' color='white' size='2' width='600' />
+        <p id='vale'>Valor del vale: ${compra.valorVale}</p>
+
+        <hr id='hr_2' color='white' size='2' width='600' />
+
+        <p id='tcompra'>
+          PRECIO
+          <br />${compra.valorVale}
+          <br />
+          ¿Desea realizar la Compra?
         </p>
-        <p id="tcompra">Indique el número de vales a comprar</p>
-        <img id="imarkCantidad" src="../../img/input_mark.png" alt="" />
-        <input
-          type="text"
-          className="form-control"
-          id="usrCantidad"
-          placeholder="Cantidad de Vales"
-          name="cantidad"
-          value={this.state.compra.cantidad}
-          onChange={this.onChange}
-          onKeyPress={this.onKeyPress}
-        />
-        {errors.cantidad && (
-          <div id="error_message_cantidad" className="alert alert-info">
-            {errors.cantidad}
-          </div>
-        )}
-        <div id="keyboardCantidad" className="form-group">
+
+        <div id='keyboardCantidad' className='form-group'>
           <Button
-            id="uno"
+            id='uno'
             style={numeroStyle}
             onClick={this.onClick}
-            value="1"
-          />
-          <Button
-            id="dos"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="2"
-          />
-          <Button
-            id="tres"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="3"
-          />
-          <Button
-            id="cuatro"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="4"
-          />
-          <Button
-            id="cinco"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="5"
-          />
-          <Button
-            id="seis"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="6"
-          />
-          <Button
-            id="siete"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="7"
-          />
-          <Button
-            id="ocho"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="8"
-          />
-          <Button
-            id="nueve"
-            style={numeroStyle}
-            onClick={this.onClick}
-            value="9"
-          />
+            value='Si'
+          >
+            Si
+          </Button>
 
           <Button
-            id="cero"
+            id='tres'
             style={numeroStyle}
             onClick={this.onClick}
-            value="0"
-          />
-        </div>
-        <div id="aceptar_borrar_cantidad">
-          <Button
-            id="borrar_button"
-            style={{
-              width: "263px",
-              height: "90px"
-            }}
-            onClick={this.onClick}
-            value="BORRAR"
-          />
-          <Button
-            id="aceptar_button"
-            style={{
-              width: "263px",
-              height: "101px"
-            }}
-            onClick={this.onClick}
-            value="ACEPTAR"
-          />
+            value='No'
+          >
+            No
+          </Button>
         </div>
         <Button
-          id="home_button"
+          id='home_button'
           style={{
-            width: "250px",
-            height: "101px"
+            width: '250px',
+            height: '101px'
           }}
           onClick={this.onClick}
-          value="SALIR"
+          value='SALIR'
         />
       </div>
     );

@@ -1,26 +1,27 @@
-import axios from "axios";
+import axios from 'axios';
 import {
   SET_BENEFICIARIO,
   BENEFICIARIO_LOADING,
   BORRAR_BENEFICIARIO_ACTUAL,
   GET_ERRORS,
   CLEAR_ERRORS,
-  BORRAR_COMPRA_ACTUAL
-} from "./types";
+  BORRAR_COMPRA_ACTUAL,
+  BORRAR_ACCESS_TOKEN
+} from './types';
 
 //
 export const buscarBenediciario = identificacionData => dispatch => {
   dispatch(setBeneficiarioLoading(true));
   dispatch(clearErrors());
   axios
-    .post("/api/beneficiarios/consulta", identificacionData)
+    .post('/api/beneficiarios/consultaClinica', identificacionData)
     .then(res => {
-      console.log("Respuesta /beneficiarios/consulta:", res.data);
+      console.log('Respuesta /beneficiarios/consultaClinica:', res.data);
       const payload = res.data;
       dispatch(setBeneficiario(payload));
     })
     .catch(err => {
-      console.log("Entro al catch: ", err);
+      console.log('Entro al catch: ', err);
       dispatch({
         type: GET_ERRORS,
         payload: err.response.data
@@ -39,6 +40,7 @@ export const setBeneficiario = data => {
 
 //re-iniciar app
 export const reiniciarCompra = () => dispatch => {
+  dispatch(borrarAccessToken());
   dispatch(borrarCompraActual());
   dispatch(borrarBeneficiarioActual());
   dispatch(clearErrors());
@@ -63,6 +65,13 @@ export const borrarBeneficiarioActual = () => {
 export const borrarCompraActual = () => {
   return {
     type: BORRAR_COMPRA_ACTUAL
+  };
+};
+
+//Borrar access_token
+export const borrarAccessToken = () => {
+  return {
+    type: BORRAR_ACCESS_TOKEN
   };
 };
 
