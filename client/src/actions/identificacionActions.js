@@ -14,6 +14,26 @@ export const buscarBenediciario = identificacionData => dispatch => {
   dispatch(setBeneficiarioLoading(true));
   dispatch(clearErrors());
   axios
+    .post('/api/beneficiarios/consulta', identificacionData)
+    .then(res => {
+      console.log('Respuesta /beneficiarios/consulta:', res.data);
+      const payload = res.data;
+      dispatch(setBeneficiario(payload));
+    })
+    .catch(err => {
+      console.log('Entro al catch: ', err);
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      });
+      dispatch(setBeneficiarioLoading(false));
+    });
+};
+
+export const buscarBenediciarioCli = identificacionData => dispatch => {
+  dispatch(setBeneficiarioLoading(true));
+  dispatch(clearErrors());
+  axios
     .post('/api/beneficiarios/consultaClinica', identificacionData)
     .then(res => {
       console.log('Respuesta /beneficiarios/consultaClinica:', res.data);

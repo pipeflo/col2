@@ -34,10 +34,10 @@ class Vale extends Component {
 
   componentDidMount() {
     if (this.isEmpty(this.props.beneficiario.vale)) {
-      this.props.history.push('/identificacion');
+      this.props.history.push('/identificacionCli');
     } else {
       if (!this.props.beneficiario.vale.tiene) {
-        this.props.history.push('/identificacion');
+        this.props.history.push('/identificacionCli');
       }
     }
 
@@ -72,7 +72,7 @@ class Vale extends Component {
     }
 
     if (nextProps.compra.valorVale) {
-      this.props.history.push('/cantidad');
+      this.props.history.push('/cantidadCli');
     }
   }
 

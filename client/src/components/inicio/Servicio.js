@@ -58,7 +58,7 @@ class Servicio extends Component {
             value='1hola'
             id='btn_primario'
             className='btn btn-primary'
-            to='/inicio'
+            to='/inicioCli'
           >
             {' '}
             Cita Pago con Tarjeta o Vale Electrónico
@@ -124,7 +124,7 @@ class Servicio extends Component {
             value='1hola'
             id='btn_primario'
             className='btn btn-primary'
-            to='/ventanilla'
+            to='/inicio'
           >
             {'Compra de Vales'}
           </Link>
