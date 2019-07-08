@@ -121,7 +121,7 @@ class Cantidad extends Component {
   render() {
     const { errors, beneficiario, compra } = this.state;
     const numeroStyle = {
-      width: '120px',
+      width: '276px',
       height: '120px',
       marginBottom: '20px',
       marginRight: '20px',
@@ -143,35 +143,26 @@ class Cantidad extends Component {
           {compra.contrato.nombreProducto} No. Contrato:{' '}
           {compra.contrato.numeroContrato}
         </p>
-        <hr id='hr_1' color='white' size='2' width='600' />
-        <p id='vale'>Valor del vale: ${compra.valorVale}</p>
-
-        <hr id='hr_2' color='white' size='2' width='600' />
-
-        <p id='tcompra'>
+        <p id='txt_precio'>
           PRECIO
           <br />${compra.valorVale}
-          <br />
-          ¿Desea realizar la Compra?
         </p>
-
-        <div id='keyboardCantidad' className='form-group'>
+        <p id='txt_precio_2'>¿Desea realizar la Compra?</p>
+        <div id='keyboardSN' className='form-group'>
           <Button
-            id='uno'
+            id='btn_si'
             style={numeroStyle}
             onClick={this.onClick}
             value='Si'
           >
-            Si
           </Button>
 
           <Button
-            id='tres'
+            id='btn_no'
             style={numeroStyle}
             onClick={this.onClick}
             value='No'
           >
-            No
           </Button>
         </div>
         <Button

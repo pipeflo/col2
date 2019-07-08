@@ -252,7 +252,7 @@ class Identificacion extends Component {
         <div className='principal'>
           <img
             id='fondo_principal'
-            src='../../img/colsanitas_soft-pag_2.jpg'
+            src='../../img/fondo_principal_2.jpg'
             width='748'
             height='1366'
             alt=''

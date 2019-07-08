@@ -204,6 +204,11 @@ class Citas extends Component {
           <span style={styleContratos}>Médico:</span>{' '}
           {cita.nombreCompletoDelMedico}
           <br />
+          <span style={styleContratos}>Entidad:</span>
+          <br />
+          <span style={styleContratos}>Empresa:</span>
+          <br />
+          <span style={styleContratos}>Plan:</span>
         </Link>
       );
     });
@@ -214,14 +219,21 @@ class Citas extends Component {
       <div>
         <img
           id='fondo_principal'
-          src='../../img/colsanitas_soft-pag_2.jpg'
+          src='../../img/fondo_principal_2.jpg'
           width='748'
           height='1366'
           alt=''
         />
         <p id='nombre_cliente'>{nombre}</p>
-        <p id='contrato'>
-          Usted tiene las siguientes citas asignadas el día de hoy
+
+        <p id='sr_usuario_citas'>
+          SEÑOR USUARIO
+        </p>
+        <p id='txt_citas'>
+          Usted tiene las siguientes citas asignadas para el día de hoy
+        </p>
+        <p id='select_cita'>
+          SELECCIONE LA CITA A ADMITIR
         </p>
         {errors.mensaje ? (
           <div id='error_message_contratos' className='alert alert-info'>
@@ -230,7 +242,7 @@ class Citas extends Component {
         ) : (
           ''
         )}
-        <div className='form-group' id='contract_1'>
+        <div className='form-group' id='citas'>
           {htmlContratos}
         </div>
         <Button
@@ -250,7 +262,7 @@ class Citas extends Component {
         <div className='principal'>
           <img
             id='fondo_principal'
-            src='../../img/colsanitas_soft-pag_2.jpg'
+            src='../../img/fondo_principal_2.jpg'
             width='748'
             height='1366'
             alt=''

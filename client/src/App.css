@@ -225,13 +225,70 @@
   left: 140px;
 }
 
-#confirma_vale {
+#citas {
   position: absolute;
   outline: 0 !important;
   background: transparent;
   border: 0px;
+  top: 70%;
+  left: 10%;
+}
+
+#confirma_vale {
+  position: absolute;
+  width: 100%;
+  outline: 0 !important;
+  background: transparent;
+  border: 0px;
   top: 570px;
-  left: 140px;
+  left: 11%;
+}
+
+#select_cita {
+  position: absolute;
+  top: 60%;
+  left: 33%;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#sr_usuario_citas {
+  position: absolute;
+  top: 48%;
+  left: 35%;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'FNB Sans Regular';
+  color: #FFFFFF;
+}
+
+#txt_citas {
+  position: absolute;
+  top: 53%;
+  left: 5.5%;
+  font-size: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#txt_vale_elec {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'FNB Sans Regular';
+  color: #FFFFFF;
+}
+
+#txt_2_ve {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 #contrato {
@@ -240,6 +297,44 @@
   left: 50px;
   font-size: 25px;
   color: #019fd9;
+}
+
+#btn_si {
+  background: url('./img/buttons/si.png');
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  align-content: center;
+  border: 0px;
+  outline: 0 !important;
+}
+#btn_si:hover {
+  background: url('./img/buttons/si_h.png');
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  align-content: center;
+  border: 0px;
+  outline: 0 !important;
+}
+
+#btn_no {
+  background: url('./img/buttons/no.png');
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  align-content: center;
+  border: 0px;
+  outline: 0 !important;
+}
+#btn_no:hover {
+  background: url('./img/buttons/no_h.png');
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  align-content: center;
+  border: 0px;
+  outline: 0 !important;
 }
 
 #btn_contrato {
@@ -286,6 +381,16 @@
   color: white;
 }
 
+#select_tipo_trx {
+  position: absolute;
+  font-size: 1em;
+  top: 40%;
+  left: 28%;
+  font-size: 20px;
+  font-family: 'FNB Sans Regular';
+  color: white;
+}
+
 #btn_primario {
   background: url('./img/buttons/primario.png');
   background-position: center;
@@ -298,6 +403,7 @@
   font-family: 'FNB Sans Regular';
   outline: 0 !important;
 }
+
 
 #info_contrato {
   position: absolute;
@@ -368,6 +474,25 @@
   color: #019fd9;
 }
 
+#txt_precio {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  font-family: 'FNB Sans Regular';
+  font-size: 45px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#txt_precio_2 {
+  position: absolute;
+  top: 68%;
+  left: 31.5%;
+  font-size: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 #imarkCantidad {
   position: absolute;
   font-size: 1em;
@@ -397,6 +522,13 @@
   top: 610px;
   left: 220px;
   width: 365px;
+}
+
+#keyboardSN {
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  left: 11%;
 }
 
 #keyboard_2Cantidad {
@@ -442,6 +574,19 @@
 #tipos_identificacion {
   position: absolute;
   top: 18%;
+  left: 10%;
+  border: 0px;
+  border-color: white;
+  font-size: 50px;
+  color: black;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#tipos_transaccion {
+  position: absolute;
+  top: 50%;
   left: 10%;
   border: 0px;
   border-color: white;

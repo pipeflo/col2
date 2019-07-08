@@ -130,8 +130,8 @@ class Vale extends Component {
         <Link
           key='1'
           style={{
-            width: '250px',
-            height: '250px',
+            width: '276px',
+            height: '120px',
             marginBottom: '30px',
             marginRight: '30px',
             fontSize: '16px',
@@ -142,7 +142,7 @@ class Vale extends Component {
             overflowWrap: 'break-word'
           }}
           value='Si'
-          id='btn_contrato'
+          id='btn_si'
           className='btn btn-primary boton_contrato'
           onClick={funciones.onClick}
           to='#'
@@ -150,14 +150,14 @@ class Vale extends Component {
           <br />
           <br />
           <span style={styleContratos} value='Si'>
-            {'Si'}
+            {''}
           </span>
         </Link>
         <Link
           key='2'
           style={{
-            width: '250px',
-            height: '250px',
+            width: '276px',
+            height: '120px',
             marginBottom: '30px',
             marginRight: '30px',
             fontSize: '16px',
@@ -168,7 +168,7 @@ class Vale extends Component {
             overflowWrap: 'break-word'
           }}
           value='No'
-          id='btn_contrato'
+          id='btn_no'
           className='btn btn-primary boton_contrato'
           onClick={funciones.onClick}
           to='#'
@@ -176,7 +176,7 @@ class Vale extends Component {
           <br />
           <br />
           <span style={styleContratos} value='No'>
-            {'No'}
+            {''}
           </span>
         </Link>
       </div>
@@ -188,18 +188,17 @@ class Vale extends Component {
       <div>
         <img
           id='fondo_principal'
-          src='../../img/colsanitas_soft-pag_2.jpg'
+          src='../../img/fondo_principal_2.jpg'
           width='748'
           height='1366'
           alt=''
         />
         <p id='nombre_cliente'>{nombre}</p>
-        <p id='contrato'>
+        <p id='txt_vale_elec'>
           SEÑOR USUARIO, USTED CUENTA CON VALES ELECTRÓNICOS VIGENTES EN SU
-          OFICINA VIRTUAL.
-          <br />
-          ¿Desea utilizarlos en esta cita?
+          OFICINA VIRTUAL
         </p>
+        <p id='txt_2_ve'>¿Desea utilizarlos en esta cita?</p>
         {errors.mensaje ? (
           <div id='error_message_contratos' className='alert alert-info'>
             {errors.mensaje}

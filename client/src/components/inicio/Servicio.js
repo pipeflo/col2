@@ -47,7 +47,7 @@ class Servicio extends Component {
             style={{
               width: '200px',
               height: '200px',
-              marginBottom: '15px',
+              marginBottom: '80px',
               marginRight: '80px',
               fontSize: '22px',
               alignContent: 'center',
@@ -61,7 +61,7 @@ class Servicio extends Component {
             to='/inicioCli'
           >
             {' '}
-            Cita Pago con Tarjeta o Vale Electrónico
+            CITA - PAGO CON TARJETA O VALE ELECTRÓNICO
           </Link>
 
           <Link
@@ -69,7 +69,7 @@ class Servicio extends Component {
             style={{
               width: '200px',
               height: '200px',
-              marginBottom: '15px',
+              marginBottom: '80px',
               marginRight: '80px',
               fontSize: '22px',
               alignContent: 'center',
@@ -83,7 +83,7 @@ class Servicio extends Component {
             to='/ventanilla'
           >
             {' '}
-            Cita Pago Efectivo
+            CITA - PAGO EN EFECTIVO
           </Link>
 
           <Link
@@ -91,7 +91,7 @@ class Servicio extends Component {
             style={{
               width: '200px',
               height: '200px',
-              marginBottom: '15px',
+              marginBottom: '80px',
               marginRight: '80px',
               fontSize: '22px',
               alignContent: 'center',
@@ -105,7 +105,7 @@ class Servicio extends Component {
             to='/ventanilla'
           >
             {' '}
-            Información General
+            INFORMACIÓN GENERAL
           </Link>
 
           <Link
@@ -113,7 +113,7 @@ class Servicio extends Component {
             style={{
               width: '200px',
               height: '200px',
-              marginBottom: '15px',
+              marginBottom: '80px',
               marginRight: '80px',
               fontSize: '22px',
               alignContent: 'center',
@@ -126,7 +126,7 @@ class Servicio extends Component {
             className='btn btn-primary'
             to='/inicio'
           >
-            {'Compra de Vales'}
+            {'COMPRA DE VALES'}
           </Link>
         </div>
       );
@@ -143,13 +143,13 @@ class Servicio extends Component {
         <div className='principal'>
           <img
             id='fondo_principal'
-            src='../../img/colsanitas_soft-pag_2.jpg'
+            src='../../img/fondo_principal_3.jpg'
             width='748'
             height='1366'
             alt=''
           />
-          <p id='nombre_cliente'>POR FAVOR SELECCIONE UNA OPCIÓN</p>
-          <div className='form-group' id='tipos_identificacion'>
+          <p id='select_tipo_trx'>POR FAVOR SELECCIONE UNA OPCIÓN</p>
+          <div className='form-group' id='tipos_transaccion'>
             {htmlTiposIdentificacion}
           </div>
         </div>
