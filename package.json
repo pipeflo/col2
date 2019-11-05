@@ -18,7 +18,7 @@
     "concurrently": "^4.1.0",
     "easy-soap-request": "^2.3.6",
     "express": "^4.16.4",
-    "mongoose": "^5.4.1",
+    "mongoose": "^5.7.5",
     "qs": "^6.7.0",
     "soap": "^0.25.0",
     "validator": "^10.10.0",
